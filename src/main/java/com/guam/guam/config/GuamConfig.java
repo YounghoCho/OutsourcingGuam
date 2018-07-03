@@ -1,16 +1,27 @@
 package com.guam.guam.config;
 
+import javax.sql.DataSource;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.filter.CharacterEncodingFilter;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
 public class GuamConfig {
 	@Bean
-	public CharacterEncodingFilter characterEncodingFilter() {
-		CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
-		characterEncodingFilter.setEncoding("UTF-8");
-		characterEncodingFilter.setForceEncoding(true);
-		return characterEncodingFilter;
+	public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
+		final SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
+		sessionFactory.setDataSource(dataSource);
+		PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+		sessionFactory.setMapperLocations(resolver.getResources("classpath:/mappers/*Mapper.xml"));
+		return sessionFactory.getObject();
+	}
+	@Bean
+	public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory) throws Exception {
+		final SqlSessionTemplate sqlSessionTemplate = new SqlSessionTemplate(sqlSessionFactory);
+		return sqlSessionTemplate;
 	}
 }
