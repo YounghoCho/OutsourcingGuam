@@ -480,6 +480,7 @@
 			background-color : #ff6600;
 			color : #ffffff;
 			font-size : 30px;
+			cursor : pointer;
 		}
 
 		#main > .button_container > .button_design > p {
@@ -1595,10 +1596,10 @@
 	<div id = "main">
 		<div class ="title">예약자 정보</div>
 		<div class = "form_box">
-			<input type = "text" placeholder = "한글 이름"/>
-			<input type = "text" placeholder = "영문 이름"/>
-			<input type = "text" placeholder = "휴대폰번호"/>
-			<input type = "text" placeholder = "이메일주소"/>
+			<input type = "text" id = "korName" placeholder = "한글 이름"/>
+			<input type = "text" id = "engName" placeholder = "영문 이름"/>
+			<input type = "text" id = "phone" placeholder = "휴대폰번호"/>
+			<input type = "text" id = "email"placeholder = "이메일주소"/>
 		</div>
 		
 
@@ -1607,10 +1608,10 @@
 		<div class ="title">예약상품 선택</div>
 
 		<div class = "form_box">
-			<input type = "text" placeholder = "예약 종류"/>
-			<input type = "text" placeholder = "투어 선택"/>
-			<input type = "text" placeholder = "투어 날짜"/>
-			<input type = "text" placeholder = "투어 시간"/>
+			<input type = "text" id = "category" placeholder = "예약 종류"/>
+			<input type = "text" id = "tour" placeholder = "투어 선택"/>
+			<input type = "text" id = "reserveDate" placeholder = "투어 날짜"/>
+			<input type = "text" id = "reserveTime" placeholder = "투어 시간"/>
 			<div class = "input_special">
 				<script type="text/javascript">
 					$(function(){ 
@@ -1640,9 +1641,9 @@
 						<p>▼</p>
 					</div>
 					<div class = "right">
-						<div>성인&nbsp</div><div class = "a">0</div><div>명</div><div> / </div>
-						<div>소아&nbsp</div><div class = "a">0</div><div>명</div><div> / </div>
-						<div>유아&nbsp</div><div class = "a">0</div><div>명</div>
+						<div>성인&nbsp</div><div id = "adult" class = "a">0</div><div>명</div><div> / </div>
+						<div>소아&nbsp</div><div id = "kid" class = "a">0</div><div>명</div><div> / </div>
+						<div>유아&nbsp</div><div id = "baby" class = "a">0</div><div>명</div>
 					</div>
 				</div>			
 				<div class = "middle">
@@ -1753,3 +1754,34 @@
   </body>
 
 </html>
+
+<script>
+$(".button_design").on("click", function(){
+	var reserveInfo = {
+			korName : $("#korName").val(),
+			engName : $("#engName").val(),
+			phone : $("#phone").val(), 
+			email : $("#email").val(),
+			category : $("#category").val(), 
+			tour : $("#tour").val(), 
+			reserveDate : $("#reserveDate").val(), 
+			reserveTime : $("#reserveTime").val(), 
+			adult : $("#adult").html(), 
+			kid : $("#kid").html(), 
+			baby : $("#baby").html()		
+	};
+	$.ajax({
+		url : "makeReserve",
+		method : "post",
+		contentType : "application/json",
+		data : JSON.stringify(reserveInfo),
+		success : function(res){
+			alert("성공");
+		},
+		error : function(err){
+			alert("예약에 실패했습니다.");
+			alert(err);
+		}
+	});	
+});	
+</script>

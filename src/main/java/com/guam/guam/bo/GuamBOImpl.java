@@ -1,6 +1,7 @@
 package com.guam.guam.bo;
 
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -18,6 +19,11 @@ public class GuamBOImpl implements GuamBO{
 	public List<Guam> getGuamData() {
 		System.out.println("boimple ¿Œ");
 		return dao.getGuamData();
+	}
+
+	@Override
+	public void inserReserveData(Map<String, Object> map) {
+		dao.insertReserveDate(map);		
 	}
 	
 }
