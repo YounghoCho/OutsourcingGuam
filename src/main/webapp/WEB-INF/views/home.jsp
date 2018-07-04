@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>³î´Ù±¡</title>
+    <title>ë†€ë‹¤ê´Œ</title>
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -501,6 +501,7 @@
 			width : 100%;
 			text-align : center;
 			border-collapse: collapse;
+			font-size : 20px;
 		}
 
 		tr, td {
@@ -1535,41 +1536,41 @@
 	<div id="top_head">
 
 		<div id="top_title">
-			<div class="up_text">±¡ÀÚÀ¯¿©Çà ´ëÇ¥ºê·£µå, ³î´Ù±¡!</div>
-			<div class="down_text">³î´Ù±¡ ÃßÃµ¿É¼ÇÀ» ¸¸³ªº¸¼¼¿ä!</div>
+			<div class="up_text">ê´Œìžìœ ì—¬í–‰ ëŒ€í‘œë¸Œëžœë“œ, ë†€ë‹¤ê´Œ!</div>
+			<div class="down_text">ë†€ë‹¤ê´Œ ì¶”ì²œì˜µì…˜ì„ ë§Œë‚˜ë³´ì„¸ìš”!</div>
 		</div>
 		
 		<div id="top_choice">
 			<div class="category">
 				<div class = "content">
-					<div class="category_list_on"><p>Åõ¾î</p></div>
+					<div class="category_list_on"><p>íˆ¬ì–´</p></div>
 					<div class="category_arrow_on"></div>
 				</div>
 				<div class = "content">
-					<div class="category_list_off"><p>È£ÅÚ</p></div>
+					<div class="category_list_off"><p>í˜¸í…”</p></div>
 					<div class="category_arrow_off"></div>
 				</div>
 				<div class = "content">
-					<div class="category_list_off"><p>·»Æ®Ä«</p></div>
+					<div class="category_list_off"><p>ë ŒíŠ¸ì¹´</p></div>
 					<div class="category_arrow_off"></div>
 				</div>
 				<!--
 				<div class = "content">
-					<div class="category_list_off"><p>¿©Çà»óÇ°</p></div>
+					<div class="category_list_off"><p>ì—¬í–‰ìƒí’ˆ</p></div>
 					<div class="category_arrow_off"></div>
 				</div>
 				-->
 			</div>
 			<div class="content">
 				<div class="inner">
-					<div class="title"><p>Åõ¾î¼±ÅÃ</p></div>
-					<div class="content">¼û°Ü³õÀº ¹Ú½ºÁö·Õ</div>
+					<div class="title"><p>íˆ¬ì–´ì„ íƒ</p></div>
+					<div class="content">ìˆ¨ê²¨ë†“ì€ ë°•ìŠ¤ì§€ë¡±</div>
 					<div class="option">
 						<div class ="link">
 							<div class ="inner">
 								<a href="https://www.naver.com/" target="_blank">
 									<img src="../images/NaverCafe.png">
-									<p>³î´Ù±¡ °ø½Ä Ä«Æä ¹Ù·Î°¡±â</p>
+									<p>ë†€ë‹¤ê´Œ ê³µì‹ ì¹´íŽ˜ ë°”ë¡œê°€ê¸°</p>
 								</a>
 							</div>
 						</div>
@@ -1577,7 +1578,7 @@
 							<div class ="inner">
 								<a href="https://www.kakaocorp.com/service/KakaoTalk" target="_blank">
 									<img src="../images/KakaoTalk.png">
-									<p>³î´Ù±¡ Ä«Åå »ó´ã ¹Ù·Î°¡±â</p>
+									<p>ë†€ë‹¤ê´Œ ì¹´í†¡ ìƒë‹´ ë°”ë¡œê°€ê¸°</p>
 								</a>
 							</div>
 						</div>
@@ -1590,24 +1591,24 @@
 	</div>
 
 	<div id = "main">
-		<div class ="title">¿¹¾àÀÚ Á¤º¸</div>
+		<div class ="title">ì˜ˆì•½ìž ì •ë³´</div>
 		<div class = "form_box">
-			<input type = "text" placeholder = "ÇÑ±Û ÀÌ¸§"/>
-			<input type = "text" placeholder = "¿µ¹® ÀÌ¸§"/>
-			<input type = "text" placeholder = "ÈÞ´ëÆù¹øÈ£"/>
-			<input type = "text" placeholder = "ÀÌ¸ÞÀÏÁÖ¼Ò"/>
+			<input type = "text" placeholder = "í•œê¸€ ì´ë¦„"/>
+			<input type = "text" placeholder = "ì˜ë¬¸ ì´ë¦„"/>
+			<input type = "text" placeholder = "íœ´ëŒ€í°ë²ˆí˜¸"/>
+			<input type = "text" placeholder = "ì´ë©”ì¼ì£¼ì†Œ"/>
 		</div>
 		
 
 
 
-		<div class ="title">¿¹¾à»óÇ° ¼±ÅÃ</div>
+		<div class ="title">ì˜ˆì•½ìƒí’ˆ ì„ íƒ</div>
 
 		<div class = "form_box">
-			<input type = "text" placeholder = "¿¹¾à Á¾·ù"/>
-			<input type = "text" placeholder = "Åõ¾î ¼±ÅÃ"/>
-			<input type = "text" placeholder = "Åõ¾î ³¯Â¥"/>
-			<input type = "text" placeholder = "Åõ¾î ½Ã°£"/>
+			<input type = "text" placeholder = "ì˜ˆì•½ ì¢…ë¥˜"/>
+			<input type = "text" placeholder = "íˆ¬ì–´ ì„ íƒ"/>
+			<input type = "text" placeholder = "íˆ¬ì–´ ë‚ ì§œ"/>
+			<input type = "text" placeholder = "íˆ¬ì–´ ì‹œê°„"/>
 			<div class = "input_special">
 				<script type="text/javascript">
 					$(function(){ 
@@ -1632,48 +1633,48 @@
 				</script>
 
 				<div class = "top">
-					<div class = "left"><p>Åõ¾î ÀÎ¿ø</p></div>
+					<div class = "left"><p>íˆ¬ì–´ ì¸ì›</p></div>
 					<div class = "icon">
-						<p>¡å</p>
+						<p>â–¼</p>
 					</div>
 					<div class = "right">
-						<div>¼ºÀÎ&nbsp</div><div class = "a">0</div><div>¸í</div><div> / </div>
-						<div>¼Ò¾Æ&nbsp</div><div class = "a">0</div><div>¸í</div><div> / </div>
-						<div>À¯¾Æ&nbsp</div><div class = "a">0</div><div>¸í</div>
+						<div>ì„±ì¸&nbsp</div><div class = "a">0</div><div>ëª…</div><div> / </div>
+						<div>ì†Œì•„&nbsp</div><div class = "a">0</div><div>ëª…</div><div> / </div>
+						<div>ìœ ì•„&nbsp</div><div class = "a">0</div><div>ëª…</div>
 					</div>
 				</div>			
 				<div class = "middle">
 					<div class = "left">
-						<div>¼ºÀÎ&nbsp</div><div class = "b">0</div><div>¸í</div>
+						<div>ì„±ì¸&nbsp</div><div class = "b">0</div><div>ëª…</div>
 					</div>
 					<div class = "right">
 						<div class = "countbox">
 							<div class = "bt_down">-</div>
-							<input class = "count" name ="num" value="0" placeholder ="ÀÎ¿ø"/>
+							<input class = "count" name ="num" value="0" placeholder ="ì¸ì›"/>
 							<div class = "bt_up">+</div>
 						</div>
 					</div>
 				</div>
 				<div class = "middle">
 					<div class = "left">
-						<div>¼Ò¾Æ&nbsp</div><div class = "b">0</div><div>¸í</div>
+						<div>ì†Œì•„&nbsp</div><div class = "b">0</div><div>ëª…</div>
 					</div>
 					<div class = "right">
 						<div class = "countbox">
 							<div class = "bt_down">-</div>
-							<input class = "count" name ="num" value="0" placeholder ="ÀÎ¿ø"/>
+							<input class = "count" name ="num" value="0" placeholder ="ì¸ì›"/>
 							<div class = "bt_up">+</div>
 						</div>
 					</div>
 				</div>
 				<div class = "middle">
 					<div class = "left">
-						<div>À¯¾Æ&nbsp</div><div class = "b">0</div><div>¸í</div>
+						<div>ìœ ì•„&nbsp</div><div class = "b">0</div><div>ëª…</div>
 					</div>
 					<div class = "right">
 						<div class = "countbox">
 							<div class = "bt_down">-</div>
-							<input class = "count" name ="num" value="0" placeholder ="ÀÎ¿ø"/>
+							<input class = "count" name ="num" value="0" placeholder ="ì¸ì›"/>
 							<div class = "bt_up">+</div>
 						</div>
 					</div>
@@ -1681,18 +1682,18 @@
 			</div>
 			<div class = "billing">
 				<div class = "normal_text">
-					<div class = "left"><p>¿¹¾à±Ý</p></div>
+					<div class = "left"><p>ì˜ˆì•½ê¸ˆ</p></div>
 					<div class = "right"><p>$0</p></div>
 				</div>
 
 				<div class = "normal_text">
-					<div class = "left"><p>ÇöÁöÁöºÒ¾×</p></div>
+					<div class = "left"><p>í˜„ì§€ì§€ë¶ˆì•¡</p></div>
 					<div class = "right"><p>$0</p></div>
 				</div>
 			</div>
 		</div>
 		<div class = "button_container">
-			<div class = "button_design"><p>»óÇ° Ãß°¡ÇÏ±â</p></div>
+			<div class = "button_design"><p>ìƒí’ˆ ì¶”ê°€í•˜ê¸°</p></div>
 		</div>
 
 	</div>
@@ -1701,27 +1702,27 @@
 		<div class = "box">
 			<table id="bill"><!-- frame="void"-->
 				<tr>
-					<th class = "col_1">Ä«Å×°í¸®</th>
-					<th class = "col_2">»óÇ°¸í</th>
-					<th class = "col_3">Åõ¾î³¯Â¥ ¹× ½Ã°£</th>
-					<th class = "col_4">ÀÎ¿ø</th>
-					<th class = "col_5">¿¹¾à±Ý</th>
-					<th class = "col_6">ÇöÁöÁöºÒ¾×</th>
+					<th class = "col_1">ì¹´í…Œê³ ë¦¬</th>
+					<th class = "col_2">ìƒí’ˆëª…</th>
+					<th class = "col_3">íˆ¬ì–´ë‚ ì§œ ë° ì‹œê°„</th>
+					<th class = "col_4">ì¸ì›</th>
+					<th class = "col_5">ì˜ˆì•½ê¸ˆ</th>
+					<th class = "col_6">í˜„ì§€ì§€ë¶ˆì•¡</th>
 				</tr>
 				<tr>
-					<td class = "col_1">Åõ¾î</td>
-					<td class = "col_2">¿À¼Çº¥Ã³È£ µ¹ÇÉÅ©·çÀú</td>
+					<td class = "col_1">íˆ¬ì–´</td>
+					<td class = "col_2">ì˜¤ì…˜ë²¤ì²˜í˜¸ ëŒí•€í¬ë£¨ì €</td>
 					<td class = "col_3">2018-07-06</td>
-					<td class = "col_4">¼ºÀÎ : 2</td>
-					<td class = "col_5">$90<br>(101,700¿ø)</td>
+					<td class = "col_4">ì„±ì¸ : 2</td>
+					<td class = "col_5">$90<br>(101,700ì›)</td>
 					<td class = "col_6">$990</td>
 				</tr>
 				<tr>
-					<td class = "col_1">Åõ¾î</td>
-					<td class = "col_2">¿À¼Çº¥Ã³È£ µ¹ÇÉÅ©·çÀú</td>
+					<td class = "col_1">íˆ¬ì–´</td>
+					<td class = "col_2">ì˜¤ì…˜ë²¤ì²˜í˜¸ ëŒí•€í¬ë£¨ì €</td>
 					<td class = "col_3">2018-07-06</td>
-					<td class = "col_4">¼ºÀÎ : 2</td>
-					<td class = "col_5">$90<br>(1,101,700¿ø)</td>
+					<td class = "col_4">ì„±ì¸ : 2</td>
+					<td class = "col_5">$90<br>(1,101,700ì›)</td>
 					<td class = "col_6">$990</td>
 				</tr>
 			</table>
@@ -1729,12 +1730,12 @@
 		<div class = "total">
 
 			<div class ="left">
-				<p>ÃÑ °áÁ¦±Ý¾×</p>
+				<p>ì´ ê²°ì œê¸ˆì•¡</p>
 			</div>
 
 			<div class ="right">
 				<div class = "orange">$90.00</div>
-				<div class = "dark">$90.00(ÇÑ±¹ °áÁ¦ ¿¹¾à±Ý : 1,101,700¿ø) + $0.00(ÇöÁö ÁöºÒ ±Ý¾×)</div>
+				<div class = "dark">$90.00(í•œêµ­ ê²°ì œ ì˜ˆì•½ê¸ˆ : 1,101,700ì›) + $0.00(í˜„ì§€ ì§€ë¶ˆ ê¸ˆì•¡)</div>
 			</div>
 
 		</div>
