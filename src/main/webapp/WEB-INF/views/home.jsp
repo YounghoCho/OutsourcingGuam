@@ -102,9 +102,9 @@
     <div class ="title">예약상품 선택</div>
 
     <div class = "form_box">
-      <button class="toggle_button">예약 종류</button>
+      <button class="toggle_button" id = "category">예약 종류</button>
       <div class="toggle_box">
-        <div class="toggle_content" id = "category">투어</div>
+        <div class="toggle_content">투어</div>
         <div class="toggle_content">호텔</div>
         <div class="toggle_content">렌트카</div>
         <div class="toggle_content">투어</div>
@@ -116,15 +116,15 @@
       </div>
       <button class="toggle_button" id = "tour">투어 선택</button>
       <div class="toggle_box">
-        <div class="toggle_content">AAAAAAAAAAAAA</div>
-        <div class="toggle_content">BBBBBBBBBB</div>
-        <div class="toggle_content">CCCCCCCCCCCCCC</div>
-        <div class="toggle_content">DDDDDDDDDDDDDDD</div>
-        <div class="toggle_content">EEEEEEE</div>
-        <div class="toggle_content">FFFFFFFFFFFFF</div>
-        <div class="toggle_content">GGGGGGGGG</div>
-        <div class="toggle_content">HHHHHHHHHHHHH</div>
-        <div class="toggle_content">IIIIIIIIII</div>
+        <div class="toggle_content2">AAAAAAAAAAAAA</div>
+        <div class="toggle_content2">BBBBBBBBBB</div>
+        <div class="toggle_content2">CCCCCCCCCCCCCC</div>
+        <div class="toggle_content2">DDDDDDDDDDDDDDD</div>
+        <div class="toggle_content2">EEEEEEE</div>
+        <div class="toggle_content2">FFFFFFFFFFFFF</div>
+        <div class="toggle_content2">GGGGGGGGG</div>
+        <div class="toggle_content2">HHHHHHHHHHHHH</div>
+        <div class="toggle_content2">IIIIIIIIII</div>
       </div>
       <input type = "text" id = "reserveDate" placeholder = "투어 날짜"/>
       <input type = "text" id = "reserveTime" placeholder = "투어 시간"/>
@@ -206,22 +206,7 @@
           <th class = "col_5">예약금</th>
           <th class = "col_6">현지지불액</th>
         </tr>
-        <tr>
-          <td class = "col_1">투어</td>
-          <td class = "col_2">오션벤처호 돌핀크루저</td>
-          <td class = "col_3">2018-07-06</td>
-          <td class = "col_4">성인 : 2</td>
-          <td class = "col_5">$90<br>(101,700원)</td>
-          <td class = "col_6">$990</td>
-        </tr>
-        <tr>
-          <td class = "col_1">투어</td>
-          <td class = "col_2">오션벤처호 돌핀크루저</td>
-          <td class = "col_3">2018-07-06</td>
-          <td class = "col_4">성인 : 2</td>
-          <td class = "col_5">$90<br>(1,101,700원)</td>
-          <td class = "col_6">$990</td>
-        </tr>
+        <!-- 데이터 추가 영역 -->
       </table>
     </div>
     <div class = "total">
@@ -255,6 +240,9 @@
   <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>-->
   <!--<script src="js/plugins.js"></script>-->
   <script src="js/main.js"></script>
+  <script src="js/add.js"></script>
+  <script src="js/reserve.js"></script>
+  
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!--<script>-->

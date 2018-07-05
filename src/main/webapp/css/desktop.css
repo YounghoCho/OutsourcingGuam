@@ -285,7 +285,7 @@ body {
   z-index: 100;
 }
 
-#main > .form_box > .toggle_box > .toggle_content {
+#main > .form_box > .toggle_box > .toggle_content, .toggle_content2 {
   width : 90%;
   width : -webkit-calc(100% - 20px - 20px); /* for Chrome, Safari */
   width :    -moz-calc(100% - 20px - 20px); /* for Firefox */
@@ -297,7 +297,7 @@ body {
   background-color : rgba( 230, 230, 230, 0.9 );
 }
 
-#main > .form_box > .toggle_box > .toggle_content:hover{
+#main > .form_box > .toggle_box > .toggle_content:hover, .toggle_content2:hover{
   background-color : rgba(200, 105, 0, 0.9);
   color : #ffffff;
 }

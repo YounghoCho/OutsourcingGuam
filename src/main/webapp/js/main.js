@@ -57,34 +57,17 @@ jQuery(function($){
         $(".category_arrow_off:eq("+a+")").attr("class","category_arrow_on");
       });
     })
+    
+});
 
-    $(".button_design").on("click", function(){
-      var reserveInfo = {
-        korName : $("#korName").val(),
-        engName : $("#engName").val(),
-        phone : $("#phone").val(),
-        email : $("#email").val(),
-        category : $("#category").val(),
-        tour : $("#tour").val(),
-        reserveDate : $("#reserveDate").val(),
-        reserveTime : $("#reserveTime").val(),
-        adult : $("#adult").html(),
-        kid : $("#kid").html(),
-        baby : $("#baby").html()
-      };
-      $.ajax({
-        url : "makeReserve",
-        method : "post",
-        contentType : "application/json",
-        data : JSON.stringify(reserveInfo),
-        success : function(res){
-          alert("성공");
-        },
-        error : function(err){
-          alert("예약에 실패했습니다.");
-          alert(err);
-        }
-      });
-    });
-
+//토글시 삽입 및 복구
+$(".toggle_content").on("click", function(){
+	$("#category").html($(this).html());
+	$("#category").css("color","black");
+	$(".toggle_box").hide();
+});
+$(".toggle_content2").on("click", function(){
+	$("#tour").html($(this).html());
+	$("#tour").css("color","black");
+	$(".toggle_box").hide();
 });
