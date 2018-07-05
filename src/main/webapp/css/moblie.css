@@ -1,0 +1,572 @@
+@media (max-width : 640px){
+
+  #top_head {
+    padding-bottom : 20px;
+  }
+
+  #top_title {
+    width : 100%;
+    padding-top : 10px;
+    padding-bottom : 10px;
+  }
+
+  #top_title > .up_text{
+    font-size : 20px;
+    margin-bottom : 5px;
+  }
+
+  #top_title > .down_text{
+    font-size : 25px;
+  }
+
+  #top_choice {
+    width : 95%;
+    width : -webkit-calc(100% - 10px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 10px); /* for Firefox */
+    width :         calc(100% - 10px); /* for IE */
+    height : 390px;
+    overflow : auto;
+    margin : 0 5px;
+    border-top : 0;
+  }
+
+  #top_choice > .category {
+    float:left;
+    width : 100%;
+    height : 50px;
+    overflow : auto;
+    border-top : 2px solid #ff6600;
+    border-bottom : 2px solid #ff6600;
+  }
+
+  #top_choice > .category > .content {
+    float:left;
+    width : 25%;
+    height : 50px;
+    display : table;
+  }
+
+  #top_choice > .category > .content > .category_list_on{
+    width : 100%;
+    height : 50px;
+    border : 0;
+  }
+
+  #top_choice > .category > .content > .category_list_on > p{
+    line-height : 100%;
+    display : table-cell;
+    vertical-align : middle;
+    font-size : 14px;
+  }
+
+  #top_choice > .category > .content > .category_arrow_on{
+    display : none;
+  }
+
+  #top_choice > .category > .content > .category_list_off{
+    width : 100%;
+    height : 50px;
+    border : 0;
+  }
+
+  #top_choice > .category > .content > .category_list_off > p{
+    line-height : 100%;
+    display : table-cell;
+    vertical-align : middle;
+    font-size : 14px;
+  }
+
+  #top_choice > .category > .content > .category_arrow_off{
+    display : none;
+  }
+
+  #top_choice > .content {
+    float:left;
+    width : 100%;
+    height : 300px;
+    padding-left : 0px;
+  }
+
+  #top_choice > .content > .inner {
+    width : 95%;
+    width : -webkit-calc(100% - 20px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 20px); /* for Firefox */
+    width :         calc(100% - 20px); /* for IE */
+    height : 100%;
+    margin : 0 10px;
+  }
+
+  #top_choice > .content > .inner > .title {
+    width : 95%;
+    width : -webkit-calc(100% - 20px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 20px); /* for Firefox */
+    width :         calc(100% - 20px); /* for IE */
+    height : auto;
+    padding : 15px 10px 10px;
+  }
+
+  #top_choice > .content > .inner > .title > p{
+    margin : 0;
+    display: table-cell;
+    vertical-align: bottom;
+    font-size : 16px;
+  }
+
+  #top_choice > .content > .inner > .content {
+    visibility : hidden;
+    font-size : 14px;
+    width : 100%;
+    background-color : white;
+    height : 60%;
+    font-family: 'Nanum Gothic', serif;
+  }
+
+  #top_choice > .content > .inner > .option {
+    width : 100%;
+    text-align : left;
+    height : 100px;
+    overflow : auto;
+  }
+
+  #top_choice > .content > .inner > .option > .link {
+    float : left;
+    width : 100%;
+    height : 50%;
+    text-align : center;
+    overflow : auto;
+    display : table;
+  }
+
+  #top_choice > .content > .inner > .option > .link > .inner {
+    width : 100%;
+    height : 45px;
+    padding : 5px 0px 0px 40px;
+    text-align : left;
+    display:table-cell;
+    vertical-align : middle;
+  }
+
+  #top_choice > .content > .inner > .option > .link > .inner > a > img {
+    float : left;
+    height : 40px;
+    margin : 0 20px;
+    position : absolute;
+    right : -webkit-calc(50% + 60px); /* for Chrome, Safari */
+    right :    -moz-calc(50% + 60px); /* for Firefox */
+    right :         calc(50% + 60px); /* for IE */
+  }
+
+  #top_choice > .content > .inner > .option > .link > .inner > a > p {
+    text-align : center;
+    font-size : 15px;
+    line-height : 40px;
+    margin-left : 40px;
+    margin : 0;
+  }
+
+  /* ========================================================================= */
+
+  #main {
+    padding : 0 5px;
+  }
+
+  #main > .title {
+    width : 97%;
+    width : -webkit-calc(100% - 15px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 15px); /* for Firefox */
+    width :         calc(100% - 15px); /* for IE */
+    border-bottom : 3px solid #ff6600;
+    margin-top : 20px;
+    margin-bottom : 0px;
+    padding-bottom : 5px;
+    padding-left : 15px;
+    font-family: 'Jeju Gothic', serif;
+    font-size : 16px;
+    font-weight : lighter;
+  }
+
+  #main > .form_box{
+    width : 95%;
+    width : -webkit-calc(100% - 10px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 10px); /* for Firefox */
+    width :         calc(100% - 10px); /* for IE */
+    margin : 5px;
+    overflow : auto;
+  }
+
+  #main > .form_box > button{
+    width : 98%;
+    height : 36px;
+    font-family: 'Jeju Gothic', serif;
+    font-size : 16px;
+    line-height : 20px;
+    padding-left : 10px;
+    width : -webkit-calc(100% - 4px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 4px); /* for Firefox */
+    width :         calc(100% - 4px); /* for IE */
+    margin : 4px;
+    outline:none;
+  }
+
+  #main > .form_box > .toggle_box {
+    display : none;
+    overflow : auto;
+    width : 92%;
+    width : -webkit-calc(100% - 10px - 10px - 4px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 10px - 10px - 4px); /* for Firefox */
+    width :         calc(100% - 10px - 10px - 4px); /* for IE */
+    margin : 4px;
+    margin-top : 40px;
+    max-height : 200px;
+  }
+
+  #main > .form_box > .toggle_box > .toggle_content {
+    width : 90%;
+    width : -webkit-calc(100% - 5px - 20px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 5px - 20px); /* for Firefox */
+    width :         calc(100% - 5px - 20px); /* for IE */
+    height : 20px;
+    padding : 10px;
+    padding-left : 15px;
+    font-size : 16px;
+    background-color : rgba( 230, 230, 230, 0.9 );
+  }
+
+  #main > .form_box > .toggle_box > .toggle_content:hover{
+    background-color : rgba(200, 105, 0, 0.9);
+    color : #ffffff;
+  }
+
+  #main > .form_box > input{
+    width : 98%;
+    height : 30px;
+    font-family: 'Jeju Gothic', serif;
+    font-size : 16px;
+    line-height : 20px;
+    padding-left : 10px;
+    width : -webkit-calc(100% - 10px - 8px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 10px - 8px); /* for Firefox */
+    width :         calc(100% - 10px - 8px); /* for IE */
+    margin : 4px;
+    border : 2px solid #999999;
+  }
+
+  #main > .form_box > input::-webkit-input-placeholder { padding-left : 0px; color: #999999; } /* Chrome/Opera/Safari */
+  #main > .form_box > input::-moz-placeholder { padding-left : 0px; color: #999999; } /* Firefox 19+ */
+  #main > .form_box > input:-ms-input-placeholder { padding-left : 0px; color: #999999; } /* IE 10+ */
+  #main > .form_box > input:-moz-placeholder { padding-left : 0px; color: #999999; } /* Firefox 18- */
+
+  #main > .form_box > .input_special{
+    width : 97%;
+    font-size : 16px;
+    text-align : left;
+    line-height : 10px;
+    width : -webkit-calc(100% - 8px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 8px); /* for Firefox */
+    width :         calc(100% - 8px); /* for IE */
+    height : 168px;
+    margin : 4px;
+    border : 2px solid #ff6600;
+  }
+
+  #main > .form_box > .input_special > .top{
+    display : table;
+    width : 100%;
+    height : 30px;
+    border-bottom : 2px solid #ff6600;
+    margin-bottom : 0px;
+  }
+
+  #main > .form_box > .input_special > .top > .left {
+    display : table-cell;
+    vertical-align : middle;
+    float : left;
+    height : 30px;
+    width : 22%;
+    width : -webkit-calc(27% - 30px); /* for Chrome, Safari */
+    width :    -moz-calc(27% - 30px); /* for Firefox */
+    width :         calc(27% - 30px); /* for IE */
+    padding-left : 10px;
+  }
+
+  #main > .form_box > .input_special > .top > .left > p {
+    color : #999999;
+    line-height : 0px;
+  }
+
+  #main > .form_box > .input_special > .top > .right {
+    width : 57%;
+    width : -webkit-calc(66% - 40px); /* for Chrome, Safari */
+    width :    -moz-calc(66% - 40px); /* for Firefox */
+    width :         calc(66% - 40px); /* for IE */
+    padding-left : 20px;
+    padding-right : 20px;
+    height : 30px;
+    display : table-cell;
+    vertical-align : middle;
+    float : right;
+  }
+
+  #main > .form_box > .input_special > .top > .right > div {
+    color : #999999;
+    float : left;
+    line-height : 0px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }
+
+  #main > .form_box > .input_special > .top > .icon {
+    width : 5%;
+    width : -webkit-calc(7% - 5px); /* for Chrome, Safari */
+    width :    -moz-calc(7% - 5px); /* for Firefox */
+    width :         calc(7% - 5px); /* for IE */
+    line-height : 0px;
+    padding-right : 5px;
+  }
+
+  #main > .form_box > .input_special > .top > .icon > p {
+    color : #999999;
+  }
+
+  #main > .form_box > .input_special > .middle{
+    display : table;
+    width : 93%;
+    width : -webkit-calc(100% - 15px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 15px); /* for Firefox */
+    width :         calc(100% - 15px); /* for IE */
+    height : 34px;
+    padding-left : 15px;
+    margin : 5px 0 0 0;
+  }
+
+  #main > .form_box > .input_special > .middle > .left{
+    display : table-cell;
+    vertical-align : middle;
+    padding : 0px;
+  }
+
+  #main > .form_box > .input_special > .middle > .left > div{
+    float : left;
+  }
+
+  #main > .form_box > .input_special > .middle > .right{
+    display : table-cell;
+    vertical-align : middle;
+    height : 34px;
+    padding : 2px 0;
+  }
+
+  #main > .form_box > .input_special > .middle > .right > .countbox{
+    display : table-cell;
+    vertical-align : middle;
+    float : right;
+    overflow : auto;
+    height : 30px;
+    border : 2px solid #999999;
+    margin-right : 20px;
+  }
+
+  #main > .form_box > .input_special > .middle > .right > .countbox > .bt_up{
+    width : 30px;
+    height : 26px;
+    font-size : 24px;
+    line-height : 26px;
+    padding-top : 4px;
+  }
+
+  #main > .form_box > .input_special > .middle > .right > .countbox > .bt_down{
+    width : 30px;
+    height : 26px;
+    font-size : 24px;
+    line-height : 26px;
+    padding-top : 4px;
+  }
+
+  #main > .form_box > .input_special > .middle > .right > .countbox > .count{
+    width : 120px;
+    height : 30px;
+    line-height : 30px;
+    font-size : 16px;
+  }
+
+  #main > .form_box > .billing {
+    width : 92%;
+    width : -webkit-calc(100% - 20px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 20px); /* for Firefox */
+    width :         calc(100% - 20px); /* for IE */
+    padding : 10px;
+  }
+
+  #main > .form_box > .billing > .normal_text {
+    width : 100%;
+    overflow : auto;
+    color : #999999;
+    font-size : 16px;
+  }
+
+  #main > .form_box > .billing > .normal_text > .left {
+    padding-left : 10px;
+  }
+
+  #main > .form_box > .billing > .normal_text > .left > p {
+    line-height : 30px;
+    margin : 0;
+  }
+
+  #main > .form_box > .billing > .normal_text > .right {
+    padding-right : 10px;
+  }
+
+  #main > .form_box > .billing > .normal_text > .right > p {
+    line-height : 30px;
+    margin : 0;
+  }
+
+  #main > .button_container {
+    width : 100%;
+    margin : 0 0 15px 0;
+    height : 40px;
+  }
+
+  #main > .button_container > .button_design {
+    width : 130px;
+    height : 100%;
+    font-size : 18px;
+  }
+
+  #main > .button_container > .button_design > p {
+  }
+
+
+  /* ============================================================== */
+
+  #list {
+    background : #ffffff;
+    overflow : auto;
+    padding : 0px;
+  }
+
+  #list > .box{
+    width : 100%;
+    border-top : 2px solid #ff6600;
+    border-bottom : 2px solid #000000;
+  }
+
+  table {
+    width : 100%;
+    text-align : center;
+    border-collapse: collapse;
+    font-family: 'Nanum Gothic', serif;
+    font-size : 12px;
+  }
+
+  tr, td {
+    border-bottom : 2px solid #aaaaaa;
+    padding: 0px;
+    word-wrap : break-word;
+    word-break : keep-all;
+  }
+
+  .col_1{
+    display : none;
+    width : 0%;
+    padding : 0;
+  }
+
+  .col_2{
+    width : 20%;
+    padding : 5px 0;
+    border-left : none;
+  }
+
+  .col_3{
+    width : 18%;
+    width : -webkit-calc(20% - 2px); /* for Chrome, Safari */
+    width :    -moz-calc(20% - 2px); /* for Firefox */
+    width :         calc(20% - 2px); /* for IE */
+    padding : 5px 0;
+    border-left : 2px solid #ff6600;
+  }
+
+  .col_4{
+    width : 18%;
+    width : -webkit-calc(20% - 2px); /* for Chrome, Safari */
+    width :    -moz-calc(20% - 2px); /* for Firefox */
+    width :         calc(20% - 2px); /* for IE */
+    padding : 5px 0;
+    border-left : 2px solid #ff6600;
+  }
+
+  .col_5{
+    width : 18%;
+    width : -webkit-calc(20% - 2px); /* for Chrome, Safari */
+    width :    -moz-calc(20% - 2px); /* for Firefox */
+    width :         calc(20% - 2px); /* for IE */
+    padding : 5px 0;
+    border-left : 2px solid #ff6600;
+  }
+
+  .col_6{
+    width : 18%;
+    width : -webkit-calc(20% - 2px); /* for Chrome, Safari */
+    width :    -moz-calc(20% - 2px); /* for Firefox */
+    width :         calc(20% - 2px); /* for IE */
+    padding : 5px 0;
+    border-left : 2px solid #ff6600;
+  }
+
+  #list > .total {
+    width : 92%;
+    width : -webkit-calc(100% - 20px); /* for Chrome, Safari */
+    width :    -moz-calc(100% - 20px); /* for Firefox */
+    width :         calc(100% - 20px); /* for IE */
+    height : 105px;
+    padding : 0 10px;
+    margin-top : 10px;
+    overflow : auto;
+    border-bottom : 2px solid #ff6600;
+  }
+
+  #list > .total > .left {
+    float : left;
+    display : table;
+    width : 100%;
+    height : 30px;
+    border-bottom : 1px solid #000000;
+  }
+
+  #list > .total > .left > p{
+    display : table-cell;
+    vertical-align : middle;
+    font-size : 16px;
+  }
+
+  #list > .total > .right {
+    float : right;
+    width : 100%;
+    height :50px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+  }
+
+  #list > .total > .right > .orange{
+    text-align : right;
+    width : 100%;
+    float : right;
+    color : #ff6600;
+    font-size : 18px;
+    margin-top : 10px;
+  }
+
+  #list > .total > .right > .dark{
+    text-align : right;
+    width : 100%;
+    float : right;
+    margin-top : 6px;
+    font-size : 12px;
+  }
+
+
+}
