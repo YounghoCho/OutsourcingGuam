@@ -21,6 +21,13 @@ jQuery(function($){
 
   $(function () {
     $('.toggle_button').click(function() {
+
+      var documentWidth = $(document).width();
+      var documentHeight = $(document).height();
+
+      $('#escape_box').css("display", "block");
+      $('#escape_box').css({'width':documentWidth,'height':documentHeight});
+
       var m = $('.toggle_button').index(this);
       if(m == "0"){
         $(".toggle_box:eq(1)").css("display", "none");
@@ -59,8 +66,19 @@ jQuery(function($){
       });
       $(".toggle_button:eq("+box_number+")").children("span").text(selected_content);
       $(".toggle_box:eq("+box_number+")").css("display", "none");
+      $("#escape_box").css("display", "none");
     });
   });
+
+  $(function () {
+    $("#escape_box").click(function () {
+      $("#escape_box").css("display", "none");
+      $(".toggle_box").each(function(index){
+        $(".toggle_box:eq("+index+")").css("display", "none");
+      });
+    });
+  });
+
 
   $(function () {
     $("#top_choice > .category > .content").click(function() {
@@ -71,6 +89,7 @@ jQuery(function($){
       $(".category_arrow_off:eq("+a+")").attr("class","category_arrow_on");
     });
   })
+
 
   $("#infomation_btn").on("click", function(e) {
     e.preventDefault();
