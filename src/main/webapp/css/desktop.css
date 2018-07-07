@@ -1,7 +1,7 @@
 /* font style*/
 
-@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
@@ -18,20 +18,23 @@ a:hover{text-decoration:none; color:#646464;}
 /* a tag style */
 
 body {
+  bockground-color : #dbdbdb;
   background-image:url(../img/background.jpg);
-  width:100%;
-  background-color:white;
-  margin:auto;
   background-repeat:no-repeat;
+  background-attachment: fixed;
+  width:100%;
+  margin:auto;
   font-family: 'Jeju Gothic', serif;
-
+  font-size : 15px;
+  color : #999999;
 }
 
 #top_head {
-  width : 100%;
-  margin : 0px;
+  width : 1024px;
+  margin : auto;
   overflow : auto;
-  padding-bottom : 80px;
+  padding-bottom : 20px;
+  font-size : 18px;
 }
 
 #top_title {
@@ -39,29 +42,25 @@ body {
   text-align : center;
   padding-top : 40px;
   padding-bottom : 10px;
-  color : white;
+  color : #ffffff;
 }
 
 #top_title > .up_text{
-  font-size : 35px;
-  margin-bottom : 10px;
+  margin-bottom : 5px;
   font-weight : 100;
   font-family: 'Nanum Brush Script', serif;
+  font-size : 35px;
 }
 
 #top_title > .down_text{
-  font-size : 60px;
   font-family: 'Jeju Gothic', serif;
+  font-size : 60px;
 }
 
 #top_choice {
-  width : 95%;
-  width : -webkit-calc(100% - 50px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 50px); /* for Firefox */
-  width :         calc(100% - 50px); /* for IE */
-  height : 400px;
+  width : 100%;
   overflow : auto;
-  margin : 0 25px;
+  margin : 0px;
   background :  rgba(255,255,255,.7);
   border-top : 3px solid #ff6600;
 }
@@ -69,17 +68,21 @@ body {
 #top_choice > .category {
   float:left;
   width : 220px;
-  height : 400px;
+  overflow : auto;
 }
 
 #top_choice > .category > .content {
   float:left;
   width : 100%;
-  height : 25%;
+  height : 95px;
   display : table;
 }
 
+#top_choice > .category > .content { cursor : pointer; }
+
 #top_choice > .category > .content > .category_list_on{
+  text-align : center;
+  display : table;
   float:left;
   width : 95%;
   width : -webkit-calc(100% - 20px); /* for Chrome, Safari */
@@ -88,17 +91,29 @@ body {
   height : 100%;
   background : #ffffff;
   color : #ff6600;
-  text-align : center;
-  display : table;
   border-bottom : 3px solid #ff6600;
 }
 
+#top_choice > .category > .content > .category_list_off{
+  display : table;
+  float:left;
+  width : 90%;
+  width : -webkit-calc(100% - 20px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 20px); /* for Firefox */
+  width :         calc(100% - 20px); /* for IE */
+  height : 100%;
+  text-align : center;
+  border-bottom : 3px solid #999999;
+}
+
 #top_choice > .category > .content > .category_list_on > p{
-  line-height : 100%;
   display : table-cell;
   vertical-align : middle;
-  font-size : 20px;
-  font-family: 'Jeju Gothic', serif;
+}
+
+#top_choice > .category > .content > .category_list_off > p{
+  display : table-cell;
+  vertical-align : middle;
 }
 
 #top_choice > .category > .content > .category_arrow_on{
@@ -108,241 +123,234 @@ body {
   border-top: 20px solid transparent;
   border-left: 20px solid white;
   border-bottom: 20px solid transparent;
-  margin-top : 30px;
+  margin-top : 25px;
 }
 
-#top_choice > .category > .content > .category_list_off{
-  float:left;
-  width : 95%;
-  width : -webkit-calc(100% - 20px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 20px); /* for Firefox */
-  width :         calc(100% - 20px); /* for IE */
-  height : 100%;
-  color : #999999;
-  text-align : center;
-  display : table;
-  border-bottom : 3px solid #999999;
-}
-
-#top_choice > .category > .content > .category_list_off > p{
-  line-height : 100%;
-  display : table-cell;
-  vertical-align : middle;
-  font-size : 20px;
-}
-
-#top_choice > .category > .content > .category_arrow_off{
-  display : none;
+#top_choice > .category > .content > .category_arrow_off {
   float : right;
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-left: 20px solid white;
-  border-bottom: 20px solid transparent;
-  margin-top : 30px;
+  display : none;
 }
 
 #top_choice > .content {
+  overflow : auto;
   float:left;
   width : 80%;
-  width : -webkit-calc(100% - 220px - 20px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 220px - 20px); /* for Firefox */
-  width :         calc(100% - 220px - 20px); /* for IE */
-  height : 397px;
-  padding-left : 20px;
+  width : -webkit-calc(100% - 220px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 220px); /* for Firefox */
+  width :         calc(100% - 220px); /* for IE */
 }
 
 #top_choice > .content > .inner {
-  width : 95%;
+  width : 90%;
   width : -webkit-calc(100% - 30px); /* for Chrome, Safari */
   width :    -moz-calc(100% - 30px); /* for Firefox */
-  width :         calc(100% - 50px); /* for IE */
-  height : 100%;
-  margin : 0 15px;
+  width :         calc(100% - 30px); /* for IE */
+  margin : 0 20px 0 10px;
+  height : 360px;
 }
 
 #top_choice > .content > .inner > .title {
-  width : 100%;
   text-align : left;
-  height : 15%;
   display : table;
+  width : 100%;
+  margin-top : 20px;
+  height : 20px;
   padding-bottom : 10px;
 }
 
 #top_choice > .content > .inner > .title > p{
-  margin : 0;
   display: table-cell;
   vertical-align: bottom;
-  font-size : 20px;
+  margin : 0;
 }
 
 #top_choice > .content > .inner > .content {
-  visibility : hidden;
-  width : 100%;
+  font-size : 15px;
+  overflow : hidden;
+  width : 90%;
+  width : -webkit-calc(100% - 30px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 30px); /* for Firefox */
+  width :         calc(100% - 30px); /* for IE */
   background-color : white;
-  height : 60%;
+  padding : 15px;
+  height : 234px;
 }
 
+#top_choice > .content > .inner > .content > div {
+  float : left;
+  padding-right : 15px;
+  margin-bottom : 10px;
+  cursor : pointer;
+}
+#top_choice > .content > .inner > .content > div:hover { color : #ff6600; }
+
 #top_choice > .content > .inner > .option {
+  overflow : auto;
   width : 100%;
   text-align : left;
-  height : 25%;
 }
 
 #top_choice > .content > .inner > .option > .link {
+  overflow : auto;
   float : left;
   width : 50%;
-  text-align : left;
-  overflow : auto;
-  display : table;
+  text-align : center;
 }
 
-#top_choice > .content > .inner > .option > .link > .inner {
+#top_choice > .content > .inner > .option > .link > a > .inner {
+
   width : 100%;
-  height : 100px;
-  text-align : left;
-  display:table-cell;
-  vertical-align : middle;
 }
 
-#top_choice > .content > .inner > .option > .link > .inner > a > img {
+#top_choice > .content > .inner > .option > .link > a > .inner > .left {
   float : left;
-  height : 50px;
-  margin : 0 10px;
+  width : 30%;
+  padding-rigth : 15px;
 }
 
-#top_choice > .content > .inner > .option > .link > .inner > a > p {
-  text-align : left;
-  font-size : 20px;
-  line-height : 50px;
-  margin : 0;
+#top_choice > .content > .inner > .option > .link > a > .inner > .left > img {
+  float : right;
+  height : 40px;
+  padding : 10px;
 }
+
+#top_choice > .content > .inner > .option > .link > a > .inner > .right {
+  display : table;
+  float : right;
+  width : 70%;
+}
+
+#top_choice > .content > .inner > .option > .link > a  > .inner > .right > p {
+  display : table-cell;
+  vertical-align : middle;
+  float : left;
+  text-align: center;
+  color : #000000;
+}
+
+
+
 
 #main {
+  width : 1024px;
+  margin : auto;
   background : #ffffff;
   overflow : auto;
-  padding : 0 20px;
 }
 
 #main > .title {
   width : 97%;
-  width : -webkit-calc(100% - 15px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 15px); /* for Firefox */
-  width :         calc(100% - 15px); /* for IE */
-  border-bottom : 3px solid #ff6600;
-  margin-top : 40px;
-  margin-bottom : 35px;
-  padding-bottom : 5px;
-  padding-left : 15px;
-  font-family: 'Nanum Gothic', serif;
-  font-size : 24px;
-  font-weight : bold;
+  width : -webkit-calc(100% - 40px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 40px); /* for Firefox */
+  width :         calc(100% - 40px); /* for IE */
+  font-size : 18px;
+  color : #000000;
+  border-bottom : 2px solid #ff6600;
+  margin : 20px 20px 5px 20px;
 }
 
 #main > .form_box{
+  overflow : auto;
   width : 95%;
   width : -webkit-calc(100% - 30px); /* for Chrome, Safari */
   width :    -moz-calc(100% - 30px); /* for Firefox */
   width :         calc(100% - 30px); /* for IE */
-  margin : 15px;
-  overflow : auto;
-}
-
-#main > .form_box > button{
-  float : left;
-  width : 45%;
-  height : 60px;
-  font-family: 'Jeju Gothic', serif;
-  font-size : 20px;
-  text-align : left;
-  line-height : 20px;
-  padding-left : 30px;
-  padding-right : 0px;
-  width : -webkit-calc(50% - 8px); /* for Chrome, Safari */
-  width :    -moz-calc(50% - 8px); /* for Firefox */
-  width :         calc(50% - 8px); /* for IE */
-  background-color : #ffffff;
-  margin : 4px;
-  color : #999999;
-  border : 2px solid #999999;
-  outline:none;
-  outline-style: none;
-  -moz-outline-style:none;
-  position : relative;
-}
-
-#main > .form_box > .toggle_box {
-  display : none;
-  overflow : auto;
-  width : 40%;
-  width : -webkit-calc(50% - 20px - 15px - 8px); /* for Chrome, Safari */
-  width :    -moz-calc(50% - 20px - 15px - 8px); /* for Firefox */
-  width :         calc(50% - 20px - 15px - 8px); /* for IE */
-  margin : 4px;
-  position : absolute;
-  margin-top : 64px;
-  max-height : 300px;
-  z-index: 100;
-}
-
-#main > .form_box > .toggle_box > .toggle_content, .toggle_content2 {
-  width : 90%;
-  width : -webkit-calc(100% - 20px - 20px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 20px - 20px); /* for Firefox */
-  width :         calc(100% - 20px - 20px); /* for IE */
-  height : 30px;
-  padding : 10px;
-  padding-left : 30px;
-  font-size : 20px;
-  background-color : rgba( 230, 230, 230, 0.9 );
-}
-
-#main > .form_box > .toggle_box > .toggle_content:hover, .toggle_content2:hover{
-  background-color : rgba(200, 105, 0, 0.9);
-  color : #ffffff;
+  margin : 0 15px;
 }
 
 #main > .form_box > input{
   float : left;
   width : 98%;
-  height : 60px;
-  font-family: 'Jeju Gothic', serif;
-  font-size : 20px;
+  height : 36px;
   text-align : left;
-  line-height : 20px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 14px;
+  width : -webkit-calc(50% - 2px - 8px - 10px); /* for Chrome, Safari */
+  width :    -moz-calc(50% - 2px - 8px - 10px); /* for Firefox */
+  width :         calc(50% - 2px - 8px - 10px); /* for IE */
   padding-left : 10px;
-  width : -webkit-calc(50% - 10px - 12px); /* for Chrome, Safari */
-  width :    -moz-calc(50% - 10px - 12px); /* for Firefox */
-  width :         calc(50% - 10px - 12px); /* for IE */
   margin : 4px;
-  border : 2px solid #999999;
+  border : 1px solid #999999;
+  border-radius: 8px;
+}
+#main > .form_box > input::-webkit-input-placeholder { font-size : 14px; color : #999999; } /* Chrome/Opera/Safari */
+#main > .form_box > input::-moz-placeholder { font-size : 14px; color : #999999; } /* Firefox 19+ */
+#main > .form_box > input:-ms-input-placeholder { font-size : 14px; color : #999999; } /* IE 10+ */
+#main > .form_box > input:-moz-placeholder { font-size : 14px; color : #999999; } /* Firefox 18- */
+
+#main > .form_box > button{
+  position : relative;
+  text-align : left;
+  float : left;
+  height : 40px;
+  width : 45%;
+  width : -webkit-calc(50% - 8px); /* for Chrome, Safari */
+  width :    -moz-calc(50% - 8px); /* for Firefox */
+  width :         calc(50% - 8px); /* for IE */
+  background-color : #ffffff;
+  margin : 4px;
+  border : 1px solid #999999;
+  border-radius: 8px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 14px;
+  color : #999999;
+  padding-left : 10px;
+  cursor : pointer;
+  outline: none;
+  -moz-outline-style:none;
 }
 
-#main > .form_box > input::-webkit-input-placeholder { padding-left : 20px; color: #999999; } /* Chrome/Opera/Safari */
-#main > .form_box > input::-moz-placeholder { padding-left : 20px; color: #999999; } /* Firefox 19+ */
-#main > .form_box > input:-ms-input-placeholder { padding-left : 20px; color: #999999; } /* IE 10+ */
-#main > .form_box > input:-moz-placeholder { padding-left : 20px; color: #999999; } /* Firefox 18- */
+#main > .form_box > .toggle_box {
+  position : absolute;
+  display : none;
+  overflow : auto;
+  width : 40%;
+  width : -webkit-calc(512px - 15px - 8px); /* for Chrome, Safari */
+  width :    -moz-calc(512px - 15px - 8px); /* for Firefox */
+  width :         calc(512px - 15px - 8px); /* for IE */
+  margin: 44px 4px 4px;
+  max-height : 300px;
+  z-index: 100;
+}
+
+#main > .form_box > .toggle_box > .toggle_content {
+  width : 90%;
+  width : -webkit-calc(100% - 17px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 17px); /* for Firefox */
+  width :         calc(100% - 17px); /* for IE */
+  height : 20px;
+  font-size : 14px;
+  padding: 7px 7px 7px 10px;
+  background-color : rgba( 230, 230, 230, 0.9 );
+}
+
+#main > .form_box > .toggle_box > .toggle_content:hover{
+  background-color : rgba(200, 105, 0, 0.9);
+  color : #ffffff;
+}
+
+
 
 #main > .form_box > .input_special{
   float : left;
   width : 47%;
   overflow : auto;
   font-family: 'Jeju Gothic', serif;
-  font-size : 20px;
   text-align : left;
   line-height : 20px;
-  width : -webkit-calc(50% - 12px); /* for Chrome, Safari */
-  width :    -moz-calc(50% - 12px); /* for Firefox */
-  width :         calc(50% - 12px); /* for IE */
+  width : -webkit-calc(50% - 10px); /* for Chrome, Safari */
+  width :    -moz-calc(50% - 10px); /* for Firefox */
+  width :         calc(50% - 10px); /* for IE */
   margin : 4px;
-  border : 2px solid #ff6600;
+  border : 1px solid #ff6600;
+  border-radius: 8px;
 }
 
 #main > .form_box > .input_special > .top{
   display : table;
+  overflow : auto;
   width : 100%;
-  height : 60px;
-  border-bottom : 2px solid #ff6600;
+  border-bottom : 1px solid #ff6600;
 }
 
 #main > .form_box > .input_special > .top > .left {
@@ -350,14 +358,16 @@ body {
   vertical-align : middle;
   float : left;
   width : 22%;
-  width : -webkit-calc(27% - 30px); /* for Chrome, Safari */
-  width :    -moz-calc(27% - 30px); /* for Firefox */
-  width :         calc(27% - 30px); /* for IE */
-  padding-left : 30px;
+  width : -webkit-calc(27% - 10px); /* for Chrome, Safari */
+  width :    -moz-calc(27% - 10px); /* for Firefox */
+  width :         calc(27% - 10px); /* for IE */
+  padding-left : 10px;
 }
 
 #main > .form_box > .input_special > .top > .left > p {
+  font-size : 14px;
   color : #999999;
+  margin : 10px 0;
 }
 
 #main > .form_box > .input_special > .top > .right {
@@ -373,12 +383,10 @@ body {
 }
 
 #main > .form_box > .input_special > .top > .right > div {
-  color : #999999;
   float : left;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
+  color : #999999;
+  font-size : 14px;
+  margin : 10px 0;
 }
 
 #main > .form_box > .input_special > .top > .icon {
@@ -394,75 +402,97 @@ body {
 
 #main > .form_box > .input_special > .top > .icon > p {
   color : #999999;
-}
-
-
-#main > .form_box > .input_special > .middle{
-  display : table;
-  width : 93%;
-  width : -webkit-calc(100% - 30px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 30px); /* for Firefox */
-  width :         calc(100% - 30px); /* for IE */
-  height : 60px;
-  padding-left : 30px;
   margin : 10px 0;
 }
 
-#main > .form_box > .input_special > .middle > .left{
+#main > .form_box > .input_special > .middle_container {
+  display : table;
+  width : 60%;
+  width : -webkit-calc(100% - 120px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 120px); /* for Firefox */
+  width :         calc(100% - 120px); /* for IE */
+  overflow : auto;
+  padding-top : 10px;
+  padding-right : 120px;
+}
+
+#main > .form_box > .input_special > .middle_container > .middle {
+  float : right;
+  overflow : auto;
+  padding-bottom : 10px;
+}
+
+#main > .form_box > .input_special > .middle_container > .middle > .left{
   display : table-cell;
   vertical-align : middle;
+  padding-right : 30px;
 }
-#main > .form_box > .input_special > .middle > .left > div{
+#main > .form_box > .input_special > .middle_container > .middle > .left > div{
   float : left;
 }
 
-#main > .form_box > .input_special > .middle > .right{
-  display : table-cell;
-  vertical-align : middle;
-  height : 48px;
-  padding : 6px 0;
+#main > .form_box > .input_special > .middle_container > .middle > .right {
+  display: table-cell;
+  vertical-align: middle;
 }
 
-#main > .form_box > .input_special > .middle > .right > .countbox{
+#main > .form_box > .input_special > .middle_container > .middle > .right > .count_box {
   display : table-cell;
   vertical-align : middle;
   float : right;
+  height : 30px;
   overflow : auto;
-  height : 44px;
-  border : 2px solid #999999;
-  margin-right : 20px;
+  border : 1px solid #999999;
 }
 
-#main > .form_box > .input_special > .middle > .right > .countbox > .bt_up{
+#main > .form_box > .input_special > .middle_container > .middle > .right > .count_box > .bt_up {
   float : left;
-  width : 44px;
-  height : 44px;
-  font-size : 35px;
-  line-height : 50px;
+  width : 30px;
+  height : 30px;
   text-align : center;
   color : #ff6600;
+  cursor : pointer;
 }
 
-#main > .form_box > .input_special > .middle > .right > .countbox > .bt_down{
+#main > .form_box > .input_special > .middle_container > .middle > .right > .count_box > .bt_up > p {
+  font-size : 24px;
+  line-height : 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-top : 17px;
+}
+
+#main > .form_box > .input_special > .middle_container > .middle > .right > .count_box > .bt_down {
   float : left;
-  width : 44px;
-  height : 44px;
-  font-size : 35px;
-  line-height : 50px;
+  width : 30px;
+  height : 30px;
   text-align : center;
   color : #ff6600;
+  cursor: pointer;
 }
 
-#main > .form_box > .input_special > .middle > .right > .countbox > .count{
+#main > .form_box > .input_special > .middle_container > .middle > .right > .count_box > .bt_down > p {
+  font-size : 24px;
+  line-height : 0;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-top : 17px;
+}
+
+#main > .form_box > .input_special > .middle_container > .middle > .right > .count_box > .count {
   float : left;
-  width : 120px;
-  height : 44px;
-  line-height : 50px;
-  font-size : 23px;
+  width : 100px;
+  height : 30px;
+  line-height : 30px;
   text-align : center;
+  font-size : 15px;
   color : black;
-  border:0;
-  padding:0px;
+  border: 0;
+  padding: 0px;
   background : #f1f1f1;
 }
 
@@ -480,7 +510,6 @@ body {
   width : 100%;
   overflow : auto;
   color : #999999;
-  font-size : 20px;
 }
 
 #main > .form_box > .billing > .normal_text > .left {
@@ -504,24 +533,21 @@ body {
 }
 
 #main > .button_container {
-  width : 95%;
-  width : -webkit-calc(100% - 30px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 30px); /* for Firefox */
-  width :         calc(100% - 30px); /* for IE */
-  margin : 30px 0;
+  width : 100%;
+  margin : 15px 0;
   overflow : auto;
-  height : 80px;
   text-align : center;
 }
 
 #main > .button_container > .button_design {
   display : table;
-  width : 200px;
-  height : 70px;
+  width : 160px;
+  height : 50px;
+  border-radius: 10px;
+  font-size : 20px;
   margin : auto;
   background-color : #ff6600;
   color : #ffffff;
-  font-size : 30px;
   cursor : pointer;
 }
 
@@ -531,124 +557,302 @@ body {
 }
 
 #list {
+  width : 1024px;
+  margin : auto;
   background : #ffffff;
   overflow : auto;
-  padding : 0 20px;
 }
 
 #list > .box{
-  width : 100%;
-  border-top : 2px solid #ff6600;
-  border-bottom : 2px solid #000000;
+  width : 95%;
+  width : -webkit-calc(100% - 30px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 30px); /* for Firefox */
+  width :         calc(100% - 30px); /* for IE */
+  border-top : 1px solid #ff6600;
+  margin : 0 15px;
 }
 
 table {
   width : 100%;
   text-align : center;
+  font-family: "Nanum Gothic", serif;
+  font-size : 12px;
+  color : #000000;
   border-collapse: collapse;
 }
 
+th{
+  border-bottom : 1px solid #ff6600;
+  padding: 5px 0;
+}
+
 tr, td {
-  border-bottom : 2px solid #aaaaaa;
-  padding: 10px;
+  border-bottom : 1px solid #aaaaaa;
+  padding: 5px 0;
 }
 
 .col_1{
-  width : 14%;
-  padding : 20px 0;
 }
 
 .col_2{
-  width : 19%;
-  width : -webkit-calc(20% - 2px); /* for Chrome, Safari */
-  width :    -moz-calc(20% - 2px); /* for Firefox */
-  width :         calc(20% - 2px); /* for IE */
-  padding : 20px 0;
-  border-left : 2px solid #ff6600;
+  border-left : 1px solid #ff6600;
 }
 
 .col_3{
-  width : 19%;
-  width : -webkit-calc(20% - 2px); /* for Chrome, Safari */
-  width :    -moz-calc(20% - 2px); /* for Firefox */
-  width :         calc(20% - 2px); /* for IE */
-  padding : 20px 0;
-  border-left : 2px solid #ff6600;
+  border-left : 1px solid #ff6600;
 }
 
 .col_4{
-  width : 12%;
-  width : -webkit-calc(13% - 2px); /* for Chrome, Safari */
-  width :    -moz-calc(15% - 2px); /* for Firefox */
-  width :         calc(13% - 2px); /* for IE */
-  padding : 20px 0;
-  border-left : 2px solid #ff6600;
+  border-left : 1px solid #ff6600;
 }
 
 .col_5{
-  width : 12%;
-  width : -webkit-calc(13% - 2px); /* for Chrome, Safari */
-  width :    -moz-calc(13% - 2px); /* for Firefox */
-  width :         calc(13% - 2px); /* for IE */
-  padding : 20px 0;
-  border-left : 2px solid #ff6600;
+  border-left : 1px solid #ff6600;
 }
 
 .col_6{
-  width : 19%;
-  width : -webkit-calc(20% - 2px); /* for Chrome, Safari */
-  width :    -moz-calc(20% - 2px); /* for Firefox */
-  width :         calc(20% - 2px); /* for IE */
-  padding : 20px 0;
-  border-left : 2px solid #ff6600;
+  border-left : 1px solid #ff6600;
 }
 
 #list > .total {
   width : 92%;
-  width : -webkit-calc(100% - 80px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 80px); /* for Firefox */
-  width :         calc(100% - 80px); /* for IE */
+  width : -webkit-calc(100% - 80px - 30px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 80px - 30px); /* for Firefox */
+  width :         calc(100% - 80px - 30px); /* for IE */
   padding : 0 40px;
-  height : 150px;
+  margin : 0 15px;
   overflow : auto;
-  border-bottom : 2px solid #ff6600;
+  border-bottom : 3px double #ff6600;
 }
 
 #list > .total > .left {
   float : left;
   display : table;
   width : 20%;
-  height : 100%;
+  height : 100px;
 }
 
 #list > .total > .left > p{
   display : table-cell;
   vertical-align : middle;
-  font-size : 25px;
+  font-size : 18px;
+  color : black;
 }
 
 #list > .total > .right {
   float : right;
   width : 80%;
-  height : 100%;
+  height : 100px;
 }
 
 #list > .total > .right > .orange{
   text-align : right;
   width : 100%;
   float : right;
+  font-size : 30px;
+  font-weight : bold;
   color : #ff6600;
-  font-size : 38px;
-  margin-top : 40px;
+  margin-top : 18px;
 }
 
 #list > .total > .right > .dark{
   text-align : right;
   width : 100%;
   float : right;
-  font-size : 20px;
+  color : black;
 }
 
+#important {
+  width : 1024px;
+  margin : auto;
+  background : #ffffff;
+  overflow : auto;
+}
+
+#important > .outer_container{
+  width : 90%;
+  width : -webkit-calc(100% - 30px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 30px); /* for Firefox */
+  width :         calc(100% - 30px); /* for IE */
+  padding : 0 15px;
+  overflow : auto;
+  margin-top : 30px;
+}
+
+#important > .outer_container> .container > .checkbox_title {
+  width : 100%;
+  height : 45px;
+  background-color : #666666;
+  color : #ffffff;
+}
+
+#important > .outer_container> .container > .checkbox_title > input{
+  float : left;
+  width : 20px;
+  height : 21px;
+  margin : 12px;
+}
+
+#important > .outer_container> .container > .checkbox_title > p {
+  float : left;
+  font-size : 15px;
+  margin : 0;
+  line-height : 45px;
+}
+
+#important > .outer_container> .container > .content {
+  padding : 10px;
+  border : 1px solid #666666;
+  max-height : 250px;
+  overflow : auto;
+  color : black;
+  margin-bottom : 20px;
+}
+
+#important > .outer_container> .container > .content > h3 {
+  margin : 10px 0;
+  font-family: "Nanum Gothic", serif;
+}
+
+#important > .outer_container> .container > .content > p, pre {
+  font-family: "Nanum Gothic", serif;
+  font-size : 12px;
+  line-height : 20px;
+}
+
+#important > .outer_container > .button_area {
+  width : 100%;
+  margin : 15px 0 30px;
+  overflow : auto;
+  text-align : center;
+}
+
+#important > .outer_container > .button_area > .button_container {
+  float : left;
+  width : 49%;
+  overflow : auto;
+}
+
+#important > .outer_container > .button_area > .margin_box {
+  float : left;
+  height : 50px;
+  width : 2%;
+}
+
+#important > .outer_container > .button_area > .button_container > .button_design {
+  display : table;
+  width : 160px;
+  height : 50px;
+  border-radius: 10px;
+  font-size : 20px;
+  margin : auto;
+  background-color : #ff6600;
+  color : #ffffff;
+  cursor : pointer;
+}
+
+#important > .outer_container > .button_area > .button_container > .button_design > p {
+  display : table-cell;
+  vertical-align : middle;
+}
+
+#mask{
+  position:absolute;
+  z-index : 9000;
+  left : 0;
+  top : 0;
+  background-color : rgba(0,0,0,0.7);
+  display : none;
+}
+
+#pop_background {
+  display : none;
+  position : fixed;
+  left : 0;
+  top : 0;
+  z-index:10000;
+}
+
+#pop_background > .pop_box {
+  width : 512px;
+  height : 100%;
+  overflow : auto;
+  margin : auto;
+  display : table;
+}
+
+#pop_background > .pop_box > .pop_content {
+  width : 100%;
+  display : table-cell;
+  vertical-align: middle;
+}
+
+#pop_background > .pop_box > .pop_content > .title {
+  width : 100%;
+  overflow : auto;
+  background-color : white;
+}
+
+#pop_background > .pop_box > .pop_content > .title > p {
+  color : black;
+  padding-left : 15px;
+  font-size : 18px;
+}
+
+#pop_background > .pop_box > .pop_content > .content_box {
+  width : 482px;
+  padding : 0 15px;
+  background-color : white;
+}
+
+#pop_background > .pop_box > .pop_content > .content_box > .content {
+  max-height : 200px;
+  overflow : auto;
+  width : 470px;
+  border : 1px solid #000000;
+  padding : 5px;
+}
+
+#pop_background > .pop_box > .pop_content > .content_box > .content > p{
+  font-family: "Nanum Gothic", serif;
+  font-size : 12px;
+  white-space: pre;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+#pop_background > .pop_box > .pop_content > .button_area {
+  width : 100%;
+  padding : 10px 0;
+  overflow : auto;
+  text-align : center;
+  background-color : white;
+}
+
+#pop_background > .pop_box > .pop_content > .button_area > .button_container {
+  float : left;
+  width : 100%;
+  overflow : auto;
+}
+
+#pop_background > .pop_box > .pop_content > .button_area > .button_container > .button_design {
+  display : table;
+  width : 160px;
+  height : 50px;
+  border-radius: 10px;
+  font-size : 20px;
+  margin : auto;
+  background-color : #999999;
+  color : #ffffff;
+  cursor : pointer;
+}
+
+#pop_background > .pop_box > .pop_content > .button_area > .button_container > .button_design > p {
+  display : table-cell;
+  vertical-align : middle;
+}
 
 #footer{
   width : 100%;
