@@ -1,5 +1,42 @@
 jQuery(function($){
 
+  $( document ).ready(function() {
+    var Now = new Date();
+
+    var NowTime = Now.getFullYear();
+
+    if(Now.getMonth() + 1 < 10){
+      NowTime += '-' + "0" + (Now.getMonth() + 1);
+    }else{
+      NowTime += '-' + (Now.getMonth() + 1);
+    }
+
+    if(Now.getDate() < 0){
+      NowTime += '-' + Now.getDate();
+    }else{
+      NowTime += '-' + "0" + Now.getDate();
+    }
+
+    $("#datepicker1").attr("value", NowTime);
+    $("#datepicker2").attr("value", NowTime);
+  });
+
+  $(function() {
+    $("#datepicker1, #datepicker2").datepicker({
+      dateFormat: 'yy-mm-dd',
+      prevText: '이전 달',
+      nextText: '다음 달',
+      monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+      monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+      dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+      dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+      dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+      showMonthAfterYear: true,
+      yearSuffix: '년'
+    });
+  });
+
+  // 투어 인원 +, -시에 발생하는 이벤트
   $(function(){
     $('.bt_up').click(function(){
       var n = $('.bt_up').index(this);
@@ -19,6 +56,7 @@ jQuery(function($){
     });
   });
 
+  // 예약 종류, 투어 선택 클릭 시 펼쳐지는 토글 이벤트
   $(function () {
     $('.toggle_button').click(function() {
 
@@ -55,6 +93,7 @@ jQuery(function($){
     });
   });
 
+  // 펼쳐진 토글 창의 목록 중의 컴포넌트 클릭 시 해당 값이 버튼으로 입력 됨
   $(function () {
     $(".toggle_content").click(function () {
       var selected_content = $(this).text();
@@ -70,6 +109,7 @@ jQuery(function($){
     });
   });
 
+ //  펼쳐진 토글 창의 컴포넌트가 아닌 외부를 클릭하여도 벗어날 수 있게함
   $(function () {
     $("#escape_box").click(function () {
       $("#escape_box").css("display", "none");
@@ -79,7 +119,7 @@ jQuery(function($){
     });
   });
 
-
+  // 상단의 투어, 호텔, 렌트가 클릭 시 해당 기능이 활성화 될 수 있도록 버튼 이벤트를 만듦
   $(function () {
     $("#top_choice > .category > .content").click(function() {
       var a = $('#top_choice > .category > .content').index(this);
@@ -90,7 +130,7 @@ jQuery(function($){
     });
   })
 
-
+  // 견적 확인 클릭 시 발생하는 이벤트로 카카오톡에 바로 붙여넣을 수 있도록 값을 전달받아 표시함.
   $("#infomation_btn").on("click", function(e) {
     e.preventDefault();
     //화면의 높이와 너비를 구한다.
@@ -132,28 +172,35 @@ jQuery(function($){
     $('#pop_background').show();
   });
 
+  // 펼쳐진 견적 확인 창을 다시 끄기 위해서 사용하는 버튼이다.
   $("#close_btn").on("click", function(e) {
     //링크 기본동작은 작동하지 않도록 한다.
     e.preventDefault();
     $('#mask, #pop_background').hide();
   });
 
-  //검은 막을 눌렀을 때
+  // 펼쳐진 견적 확인 창의 외곽 어두운 영역을 클릭해도 끌 수 있도록 한다.
   $('#mask').click(function () {
     $(this).hide();
     $('#pop_background').hide();
   });
 
+  // 신청하기 버튼을 클릭 시 발생하는 이벤트
   $("#complete_btn").on("click", function(){
     if($("#check_one").is(":checked") == false){
-      alert("필독사항을 확인해주세요.");
+      alert("공통특약사항을 확인해주세요.");
       event.preventDefault();
       $('html,body').animate({scrollTop:$(".checkbox_title:eq(0)").offset().top}, 500);
       return ;
     }else if($("#check_two").is(":checked") == false){
-      alert("정보제공에 동의해주세요.");
+      alert("필독사항을 확인해주세요.");
       event.preventDefault();
       $('html,body').animate({scrollTop:$(".checkbox_title:eq(1)").offset().top}, 500);
+      return ;
+    }else if($("#check_three").is(":checked") == false){
+      alert("정보제공에 동의해주세요.");
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(".checkbox_title:eq(2)").offset().top}, 500);
       return ;
     }
     var reserveInfo = {
