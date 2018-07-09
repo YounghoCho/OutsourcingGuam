@@ -1,10 +1,8 @@
 /* font style*/
 
 @import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
 
 /* font style*/
 
@@ -273,6 +271,23 @@ body {
   border : 1px solid #999999;
   border-radius: 8px;
 }
+
+#main > .form_box > .picker_input{
+  float : left;
+  width : 48%;
+  height : 36px;
+  text-align : left;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 14px;
+  width : -webkit-calc(25% - 2px - 8px - 10px); /* for Chrome, Safari */
+  width :    -moz-calc(25% - 2px - 8px - 10px); /* for Firefox */
+  width :         calc(25% - 2px - 8px - 10px); /* for IE */
+  padding-left : 10px;
+  margin : 4px;
+  border : 1px solid #999999;
+  border-radius: 8px;
+}
+
 #main > .form_box > input::-webkit-input-placeholder { font-size : 14px; color : #999999; } /* Chrome/Opera/Safari */
 #main > .form_box > input::-moz-placeholder { font-size : 14px; color : #999999; } /* Firefox 19+ */
 #main > .form_box > input:-ms-input-placeholder { font-size : 14px; color : #999999; } /* IE 10+ */
@@ -718,6 +733,15 @@ tr, td {
   font-family: "Nanum Gothic", serif;
   font-size : 12px;
   line-height : 20px;
+  margin : 0;
+}
+
+#important > .outer_container> .container > .content > a > p {
+  font-family: "Nanum Gothic", serif;
+  font-size : 12px;
+  line-height : 20px;
+  margin : 0;
+  color : blue;
 }
 
 #important > .outer_container > .button_area {
@@ -754,6 +778,15 @@ tr, td {
 #important > .outer_container > .button_area > .button_container > .button_design > p {
   display : table-cell;
   vertical-align : middle;
+}
+
+#escape_box {
+  display : none;
+  position : absolute;
+  top : 0;
+  left : 0;
+  color : rgba(0,0,0,0.7);
+  z-index: 99;
 }
 
 #mask{
