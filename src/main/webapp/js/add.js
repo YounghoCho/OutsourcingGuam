@@ -1,4 +1,4 @@
-$(".button_design").on("click", function(){
+$("#add_btn").on("click", function(){
   var v = {
     korName : $("#korName").val(),
     engName : $("#engName").val(),
@@ -23,17 +23,17 @@ $(".button_design").on("click", function(){
 //  else if(v.reserveTime == '')  {alert("투어 시간을 선택해주세요"); return;}
 //  else if(v.adult + v.kid + v.baby == 0) {alert("투어 인원을 선택해주세요"); return;}
 
-  //상품 추가  
+  //상품 추가
   var countPeople = parseInt(v.adult) + parseInt(v.kid) + parseInt(v.baby);
   $("#bill > tbody").append(
-      "<tr><td class=\'col_1\'>" + v.category + "</td>" +
-		  "<td class=\'col_2\'>" + v.tour + "</td>" +
-		  "<td class=\'col_3\'>" + v.reserveDate + "/" + v.reserveTime + "</td>" +
-		  "<td class=\'col_4\'>" + countPeople + "</td>" +
-		  "<td class=\'col_5\'>" + "$90" + "<br>(101,900 원)" + "</td>" +
-		  "<td class=\'col_6\'>" + "$1000" + "</td></tr>"		  
-	);
-  
+    "<tr><td class=\'col_1\'>" + v.category + "</td>" +
+    "<td class=\'col_2\'>" + v.tour + "</td>" +
+    "<td class=\'col_3\'>" + v.reserveDate + "/" + v.reserveTime + "</td>" +
+    "<td class=\'col_4\'>" + countPeople + "</td>" +
+    "<td class=\'col_5\'>" + "$90" + "<br>(101,900 원)" + "</td>" +
+    "<td class=\'col_6\'>" + "$1000" + "</td></tr>"
+  );
+
   //상품 정보 갱신
   $("#korName").val('');
   $("#engName").val('');
@@ -46,9 +46,8 @@ $(".button_design").on("click", function(){
   $("#reserveDate").val('');
   $("#reserveTime").val('');
   $(".count").val('0');
-  
+
   //전체 컬럼을 넘기거나 계산할떄
   //추가 버튼 누를때마다 i++ 하고
   //각 tr의 클래스에 _ + i++ 형태로 고유 클래스를 준다음 넘기거나 계산한다.
 });
-

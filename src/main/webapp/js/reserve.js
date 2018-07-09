@@ -27,4 +27,3 @@ $(".button_reserve").on("click", function(){
     }
   });
 });
-
