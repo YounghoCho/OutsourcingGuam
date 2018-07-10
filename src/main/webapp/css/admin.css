@@ -3,18 +3,31 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 
-a:link{text-decoration : none; color : #0010ff;}
-a:visited{text-decoration : none; color : #777777;}
-a:active{text-decoration : none; color : #0010ff;}
-a:hover{text-decoration : none; color : #0010ff;}
-
 /* font style*/
+
+/* a tag style */
+
+a:link{ text-decoration:none; }
+a:visited{ text-decoration:none; }
+a:active{ text-decoration:none; }
+a:hover{ text-decoration:none; }
+
+/* a tag style */
 
 .title_font {
   margin : 0;
   font-family: 'Jeju Gothic', serif;
   font-size : 12pt;
   color : #3b4752;
+}
+
+#escape_box {
+  display : none;
+  position : absolute;
+  top : 0;
+  left : 0;
+  color : rgba(0,0,0,0.7);
+  z-index: 99;
 }
 
 body {
@@ -29,29 +42,6 @@ body {
 #background_container {
   width : 100%;
   overflow : auto;
-}
-
-#header {
-  width : 95%;
-  width : -webkit-calc(100% - 60px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 60px); /* for Firefox */
-  width :         calc(100% - 60px); /* for IE */
-  padding : 0 30px;
-  height : 60px;
-  background-color : #3b4752;
-}
-
-#header > .head_title_container {
-  display : table;
-  height : 100%;
-}
-
-#header > .head_title_container > .head_title_content {
-  display : table-cell;
-  vertical-align: middle;
-  color : white;
-  font-size : 20px;
-  font-weight : bold;
 }
 
 #main {
@@ -81,28 +71,7 @@ body {
   float : left;
 }
 
-#main > .admin_container {
-  width : 90%;
-  width : -webkit-calc(100% - 60px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 60px); /* for Firefox */
-  width :         calc(100% - 60px); /* for IE */
-  padding : 30px 30px 0 30px;
-  overflow : auto;
-}
 
-#main > .admin_container > .link_container {
-  overflow : auto;
-}
-
-#main > .admin_container > .link_container > a > div {
-  float : left;
-  overflow : auto;
-  font-size : 16px;
-  font-weight : bold;
-  margin: 0 0 15px;
-}
-
-/*list 관련*/
 #main > .list_container {
   width : 90%;
   width : -webkit-calc(100% - 60px); /* for Chrome, Safari */
@@ -112,6 +81,190 @@ body {
   overflow : auto;
 }
 
+#main > .list_container > .category_select_area {
+  width : 100%;
+  overflow : auto;
+}
+
+#main > .list_container > .category_select_area > .each_select_box{
+  display: table;
+  float : left;
+}
+
+#main > .list_container > .category_select_area > .each_select_box > button{
+  position : relative;
+  text-align : left;
+  float : left;
+  height : 30px;
+  width : 200px;
+  background-color : #eeeeee;
+  border : 1px solid #3b4752;
+  border-radius: 8px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 12px;
+  color : #3b4752;
+  padding-left : 7px;
+  cursor : pointer;
+  outline: none;
+  -moz-outline-style:none;
+}
+
+#main > .list_container > .category_select_area > .each_select_box > .toggle_box {
+  position : absolute;
+  display : none;
+  overflow : auto;
+  width : 200px;
+  margin-top : 30px;
+  max-height : 300px;
+  z-index: 100;
+}
+
+#main > .list_container > .category_select_area > .each_select_box > .toggle_box > .toggle_content {
+  width : 90%;
+  width : -webkit-calc(100% - 12px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 12px); /* for Firefox */
+  width :         calc(100% - 12px); /* for IE */
+  height : 24px;
+  font-size : 12px;
+  padding : 7px 6px 0;
+  background-color : rgba( 230, 230, 230, 0.9 );
+}
+
+#main > .list_container > .category_select_area > .each_select_box > .toggle_box > .toggle_content:hover{
+  background-color : rgba(200, 105, 0, 0.9);
+  color : #ffffff;
+}
+
+#main > .list_container > .category_select_area > .each_select_box > .middle_text{
+  overflow : auto;
+  display : table-cell;
+  vertical-align: middle;
+  padding : 0 5px;
+}
+
+#main > .list_container > .title_area {
+  overflow : auto;
+  width : 100%;
+  border-bottom : 1px solid #3b4752;
+  margin : 30px 0 20px;
+  padding-bottom : 5px;
+}
+
+#main > .list_container > .title_area > .title_text {
+  float : left;
+  color : black;
+  font-size : 16px;
+}
+
+#main > .list_container > .category_control_area {
+
+}
+
+#main > .list_container > .category_control_area > .category_control_area {
+  display : table;
+  overflow : auto;
+  width : 100%;
+  margin-bottom : 15px;
+}
+
+#main > .list_container > .category_control_area > .category_control_area > .inner_text {
+  display : table-cell;
+  width : 80px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 14px;
+  padding-left : 20px;
+}
+
+#main > .list_container > .category_control_area > .category_control_area > button{
+  position : relative;
+  text-align : left;
+  height : 30px;
+  width : 70px;
+  text-align: center;
+  margin-left : 10px;
+  background-color : #3b4752;
+  border : 1px solid #3b4752;
+  border-radius: 8px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 12px;
+  color : #ffffff;
+  padding-left : 7px;
+  cursor : pointer;
+  outline: none;
+  -moz-outline-style:none;
+}
+
+#main > .list_container > .category_control_area > .category_control_area > input {
+  position : relative;
+  text-align : left;
+  height : 26px;
+  width : 200px;
+  background-color : #ffffff;
+  border : 1px solid #999999;
+  border-radius: 8px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 12px;
+  color : #999999;
+  padding-left : 7px;
+  cursor : pointer;
+  outline: none;
+  -moz-outline-style:none;
+}
+
+input::-webkit-input-placeholder { color : #999999; } /* Chrome/Opera/Safari */
+#main > .form_box > input::-moz-placeholder { color : #999999; } /* Firefox 19+ */
+#main > .form_box > input:-ms-input-placeholder { color : #999999; } /* IE 10+ */
+#main > .form_box > input:-moz-placeholder { color : #999999; } /* Firefox 18- */
+
+#main > .list_container > .category_control_area > .category_list_area {
+
+}
+
+#main > .list_container > .category_control_area > .category_list_area > .table_container{
+  overflow : auto;
+  background-color : white;
+}
+
+#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container{
+  overflow : auto;
+}
+
+#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container > .td_container {
+  float : left;
+  overflow : auto;
+  cursor : pointer;
+}
+
+#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container > .td_container > .td_cell {
+  float : left;
+  text-align: center;
+  width : 200px;
+  border-right : 1px solid #999999;
+  overflow : auto;
+  padding : 5px 0;
+}
+
+#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container > .del_btn_container {
+  float : left;
+  overflow : auto;
+  cursor : alias;
+}
+
+#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container > .del_btn_container > .del_text {
+  float : left;
+  width : 50px;
+  text-align: center;
+  overflow : auto;
+  padding : 5px 0;
+  color : #ff0000;
+  text-decoration: underline;
+}
+
+
+
+
+
+/*table 관련*/
 #main > .list_container > .table_container{
   width : 99%;
   width : -webkit-calc(100% - 2px); /* for Chrome, Safari */
@@ -176,8 +329,78 @@ body {
 #main > .list_container > .table_container > .tr_container > .hidden_toggle_box > .detail > .lines > div {
   float : left;
 }
-/*list 관련*/
+/*table 관련*/
 
+/*sidebar 관련*/
+#menu_box {
+  position : fixed;
+  bottom : 0;
+  right : 0;
+  display : none;
+  width : 200px;
+  background-color: #3b4752;
+}
+
+#menu_box > .menu_box_container {
+  width : 90%;
+  width : -webkit-calc(100% - 30px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 30px); /* for Firefox */
+  width :         calc(100% - 30px); /* for IE */
+  padding : 15px;
+}
+
+#menu_box > .menu_box_container > a >.each_menu {
+  width : 100%;
+  font-size : 16px;
+  font-family: 'Jeju Gothic', serif;
+  color : white;
+  padding-bottom : 20px;
+  cursor : pointer;
+}
+#menu_box > .menu_box_container > a > .each_menu:hover {
+  color : yellow;
+}
+/*sidebar 관련*/
+
+/*header 관련*/
+#header {
+  width : 95%;
+  width : -webkit-calc(100% - 60px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 60px); /* for Firefox */
+  width :         calc(100% - 60px); /* for IE */
+  padding : 0 30px;
+  height : 60px;
+  background-color : #3b4752;
+}
+
+#header > .head_title_container {
+  display : table;
+  width : 100%;
+  height : 100%;
+}
+
+#header > .head_title_container > .head_title_content {
+  display : table-cell;
+  vertical-align: middle;
+  color : white;
+  font-size : 20px;
+  font-weight : bold;
+}
+
+#header > .head_title_container > .head_menu_icon_area {
+  overflow : auto;
+  float : right;
+  padding : 15px 0;
+  cursor : pointer;
+}
+
+#header > .head_title_container > .head_menu_icon_area > img {
+  width : 30px;
+  height : 30px;
+}
+/*header 관련*/
+
+/*footer 관련*/
 #footer{
   position : fixed;
   bottom : 0;
@@ -200,6 +423,4 @@ body {
   vertical-align : middle;
   width : 100%;
 }
-
-
-
+/*footer 관련*/
