@@ -11,7 +11,7 @@ jQuery(function($){
       NowTime += '-' + (Now.getMonth() + 1);
     }
 
-    if(Now.getDate() < 0){
+    if(Now.getDate() >= 10){
       NowTime += '-' + Now.getDate();
     }else{
       NowTime += '-' + "0" + Now.getDate();
@@ -67,29 +67,8 @@ jQuery(function($){
       $('#escape_box').css({'width':documentWidth,'height':documentHeight});
 
       var m = $('.toggle_button').index(this);
-      if(m == "0"){
-        $(".toggle_box:eq(1)").css("display", "none");
-        if($(".toggle_box:eq("+m+")").css("display") === "none"){
-          $(".toggle_box:eq("+m+")").css("display", "block");
-          $(".toggle_box:eq("+m+")").css("left", "");
-        }else{
-          $(".toggle_box:eq("+m+")").css("display", "none");
-        }
-      }else{
-        $(".toggle_box:eq(0)").css("display", "none");
-        if($(".toggle_box:eq("+m+")").css("display") === "none"){
-          $(".toggle_box:eq("+m+")").css("display", "block");
-          if($(window).width() > 623){
-            $(".toggle_box:eq("+m+")").css("left", "50%");
-          }
-          else{
-            $(".toggle_box:eq("+m+")").css("margin-top", "84px");
-          }
-        }else{
-          $(".toggle_box:eq("+m+")").css("display", "none");
-        }
-      }
 
+      $(".toggle_box:eq("+m+")").css("display", "block");
     });
   });
 
@@ -97,7 +76,7 @@ jQuery(function($){
   $(function () {
     $(".toggle_content").click(function () {
       var selected_content = $(this).text();
-      var box_number = "1";
+      var box_number = -1;
       $(".toggle_box").each(function(index) {
         if($(".toggle_box:eq("+index+")").css("display") == "block"){
           box_number = index;

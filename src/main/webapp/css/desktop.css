@@ -293,15 +293,21 @@ body {
 #main > .form_box > input:-ms-input-placeholder { font-size : 14px; color : #999999; } /* IE 10+ */
 #main > .form_box > input:-moz-placeholder { font-size : 14px; color : #999999; } /* Firefox 18- */
 
-#main > .form_box > button{
+#main > .form_box > .each_toggle_component {
+  display: table;
+  float : left;
+  width : 50%;
+}
+
+#main > .form_box > .each_toggle_component > button{
   position : relative;
   text-align : left;
   float : left;
   height : 40px;
-  width : 45%;
-  width : -webkit-calc(50% - 8px); /* for Chrome, Safari */
-  width :    -moz-calc(50% - 8px); /* for Firefox */
-  width :         calc(50% - 8px); /* for IE */
+  width : 90%;
+  width : -webkit-calc(100% - 8px); /* for Chrome, Safari */
+  width :    -moz-calc(100% - 8px); /* for Firefox */
+  width :         calc(100% - 8px); /* for IE */
   background-color : #ffffff;
   margin : 4px;
   border : 1px solid #999999;
@@ -315,7 +321,7 @@ body {
   -moz-outline-style:none;
 }
 
-#main > .form_box > .toggle_box {
+#main > .form_box > .each_toggle_component > .toggle_box {
   position : absolute;
   display : none;
   overflow : auto;
@@ -328,7 +334,7 @@ body {
   z-index: 100;
 }
 
-#main > .form_box > .toggle_box > .toggle_content {
+#main > .form_box > .each_toggle_component > .toggle_box > .toggle_content {
   width : 90%;
   width : -webkit-calc(100% - 17px); /* for Chrome, Safari */
   width :    -moz-calc(100% - 17px); /* for Firefox */
@@ -339,7 +345,7 @@ body {
   background-color : rgba( 230, 230, 230, 0.9 );
 }
 
-#main > .form_box > .toggle_box > .toggle_content:hover{
+#main > .form_box > .each_toggle_component > .toggle_box > .toggle_content:hover{
   background-color : rgba(200, 105, 0, 0.9);
   color : #ffffff;
 }
