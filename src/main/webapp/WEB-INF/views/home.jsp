@@ -138,34 +138,74 @@
     <div class ="title">예약상품 선택</div>
 
     <div class = "form_box">
-      <button class="toggle_button"><span>예약 종류</span></button>
-      <div class="toggle_box">
-        <div class="toggle_content" id = "category">투어</div>
-        <div class="toggle_content">호텔</div>
-        <div class="toggle_content">렌트카</div>
-        <div class="toggle_content">투어</div>
-        <div class="toggle_content">호텔</div>
-        <div class="toggle_content">렌트카</div>
-        <div class="toggle_content">투어</div>
-        <div class="toggle_content">호텔</div>
-        <div class="toggle_content">렌트카</div>
+      <div class = "each_toggle_component">
+        <button class="toggle_button" id = "first_divide_option"><span>대분류 선택</span></button>
+        <div class="toggle_box">
+          <div class="toggle_content">대분류 옵션1</div>
+          <div class="toggle_content">대분류 옵션2</div>
+          <div class="toggle_content">대분류 옵션3</div>
+          <div class="toggle_content">대분류 옵션4</div>
+          <div class="toggle_content">대분류 옵션5</div>
+          <div class="toggle_content">대분류 옵션6</div>
+          <div class="toggle_content">대분류 옵션7</div>
+          <div class="toggle_content">대분류 옵션8</div>
+          <div class="toggle_content">대분류 옵션9</div>
+        </div>
       </div>
-      <button class="toggle_button" id = "tour"><span>투어 선택</span></button>
-      <div class="toggle_box">
-        <div class="toggle_content">AAAAAAAAAAAAA</div>
-        <div class="toggle_content">BBBBBBBBBB</div>
-        <div class="toggle_content">CCCCCCCCCCCCCC</div>
-        <div class="toggle_content">DDDDDDDDDDDDDDD</div>
-        <div class="toggle_content">EEEEEEE</div>
-        <div class="toggle_content">FFFFFFFFFFFFF</div>
-        <div class="toggle_content">GGGGGGGGG</div>
-        <div class="toggle_content">HHHHHHHHHHHHH</div>
-        <div class="toggle_content">IIIIIIIIII</div>
+      <div class = "each_toggle_component">
+        <button class="toggle_button" id = "second_divide_option"><span>중분류 선택</span></button>
+        <div class="toggle_box">
+          <div class="toggle_content">중분류 옵션1</div>
+          <div class="toggle_content">중분류 옵션2</div>
+          <div class="toggle_content">중분류 옵션3</div>
+          <div class="toggle_content">중분류 옵션4</div>
+          <div class="toggle_content">중분류 옵션5</div>
+          <div class="toggle_content">중분류 옵션6</div>
+          <div class="toggle_content">중분류 옵션7</div>
+          <div class="toggle_content">중분류 옵션8</div>
+          <div class="toggle_content">중분류 옵션9</div>
+        </div>
       </div>
+      <div class = "each_toggle_component">
+        <button class="toggle_button" id = "third_divide_option"><span>소분류 선택</span></button>
+        <div class="toggle_box">
+          <div class="toggle_content">소분류 옵션1</div>
+          <div class="toggle_content">소분류 옵션2</div>
+          <div class="toggle_content">소분류 옵션3</div>
+          <div class="toggle_content">소분류 옵션4</div>
+          <div class="toggle_content">소분류 옵션5</div>
+          <div class="toggle_content">소분류 옵션6</div>
+          <div class="toggle_content">소분류 옵션7</div>
+          <div class="toggle_content">소분류 옵션8</div>
+          <div class="toggle_content">소분류 옵션9</div>
+        </div>
+      </div>
+      <div class = "each_toggle_component">
+        <button class="toggle_button" id = "fourth_divide_option"><span>기타분류 선택</span></button>
+        <div class="toggle_box">
+          <div class="toggle_content">기타분류 옵션1</div>
+          <div class="toggle_content">기타분류 옵션2</div>
+          <div class="toggle_content">기타분류 옵션3</div>
+          <div class="toggle_content">기타분류 옵션4</div>
+          <div class="toggle_content">기타분류 옵션5</div>
+          <div class="toggle_content">기타분류 옵션6</div>
+          <div class="toggle_content">기타분류 옵션7</div>
+          <div class="toggle_content">기타분류 옵션8</div>
+          <div class="toggle_content">기타분류 옵션9</div>
+        </div>
+      </div>
+
       <input type="text" id="datepicker1" class = "picker_input" value="1992-06-29" style = ""/>
       <input type="text" id="datepicker2" class = "picker_input" value="1992-06-29" style = ""/>
       <!--<p>Date: <input type="text" id="datepicker"></p>-->
-      <input type = "text" id = "reserveTime" placeholder = "투어 시간"/>
+      <div class = "each_toggle_component">
+        <button class="toggle_button" id = "reserveTime"><span>투어시간</span></button>
+        <div class="toggle_box">
+          <div class="toggle_content">오전</div>
+          <div class="toggle_content">오후</div>
+          <div class="toggle_content">종일</div>
+        </div>
+      </div>
       <div class = "input_special">
         <div class = "top">
           <div class = "left"><p>투어 인원</p></div>
@@ -220,17 +260,17 @@
       <div class = "billing">
         <div class = "normal_text">
           <div class = "left"><p>예약금</p></div>
-          <div class = "right"><p>$0</p></div>
+          <div class = "right" id = "local_payment"><p>$123.45</p></div>
         </div>
 
         <div class = "normal_text">
           <div class = "left"><p>현지지불액</p></div>
-          <div class = "right"><p>$0</p></div>
+          <div class = "right" id = "abroad_payment"><p>$500.12</p></div>
         </div>
       </div>
     </div>
-    <div id = "add_btn" class = "button_container">
-      <div class = "button_design"><p>상품 추가하기</p></div>
+    <div class = "button_container">
+      <div id = "add_btn" class = "button_design"><p>상품 추가하기</p></div>
     </div>
 
   </div>
@@ -239,9 +279,9 @@
     <div class = "box">
       <table id="bill"><!-- frame="void"-->
         <tr>
-          <th class = "col_1">카테고리</th>
-          <th class = "col_2">상품명</th>
-          <th class = "col_3">투어날짜 및 시간</th>
+          <th class = "col_1">대분류 / 중분류</th>
+          <th class = "col_2">소분류 / 기타분류</th>
+          <th class = "col_3">투어날짜 / 투어시간</th>
           <th class = "col_4">인원</th>
           <th class = "col_5">예약금</th>
           <th class = "col_6">현지지불액</th>
@@ -251,16 +291,16 @@
           <td class = "col_2">오션벤처호 돌핀크루저</td>
           <td class = "col_3">2018-07-06</td>
           <td class = "col_4">성인 : 2</td>
-          <td class = "col_5">$90<br>(101,700원)</td>
-          <td class = "col_6">$990</td>
+          <td class = "col_5">$0<br>(0원)</td>
+          <td class = "col_6">$0</td>
         </tr>
         <tr>
           <td class = "col_1">투어</td>
           <td class = "col_2">오션벤처호 돌핀크루저</td>
           <td class = "col_3">2018-07-06</td>
           <td class = "col_4">성인 : 2</td>
-          <td class = "col_5">$90<br>(1,101,700원)</td>
-          <td class = "col_6">$990</td>
+          <td class = "col_5">$0.00<br>(0원)</td>
+          <td class = "col_6">$0.00</td>
         </tr>
       </table>
     </div>
@@ -271,8 +311,8 @@
       </div>
 
       <div class ="right">
-        <div class = "orange">$90.00</div>
-        <div class = "dark">$90.00(한국 결제 예약금 : 1,101,700원) + $0.00(현지 지불 금액)</div>
+        <div class = "orange">$0.00</div>
+        <div class = "dark">$0.00(한국 결제 예약금 : 0원) + $0.00(현지 지불 금액)</div>
       </div>
     </div>
 
