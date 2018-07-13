@@ -28,13 +28,14 @@ public class GuamDAO {
 		paramMap.put("engName", map.get("engName"));
 		paramMap.put("phone", map.get("phone"));
 		paramMap.put("email", map.get("email"));
-		paramMap.put("category", map.get("category"));
-		paramMap.put("tour", map.get("tour"));
-		paramMap.put("reserveDate", map.get("reserveDate"));
-		paramMap.put("reserveTime", map.get("reserveTime"));
-		paramMap.put("adult", Integer.parseInt((String)map.get("adult")));
-		paramMap.put("kid", Integer.parseInt((String)map.get("kid")));
-		paramMap.put("baby", Integer.parseInt((String)map.get("baby")));
+		
+		paramMap.put("bigMidCategory", map.get("bigMidCategory"));
+		paramMap.put("smallEtcCategory", map.get("smallEtcCategory"));
+		paramMap.put("reserveDateAndTime", map.get("reserveDateAndTime"));
+		paramMap.put("reservePeople", map.get("reservePeople"));
+		paramMap.put("preCharge", map.get("preCharge"));
+		paramMap.put("localCharge", map.get("localCharge"));
+//		paramMap.put("baby", Integer.parseInt((String)map.get("baby")));
 				
 		sqlsession.insert(NAMESPACE_GUAM + "insertGuamData", paramMap);
 	}

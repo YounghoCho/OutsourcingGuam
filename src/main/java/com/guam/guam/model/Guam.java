@@ -8,13 +8,14 @@ public class Guam {
 	private String engName;
 	private String phone;
 	private String email;
-	private String category;
-	private String tour;
-	private String reserveDate;
-	private String reserveTime;
-	private int adult;
-	private int kid;
-	private int baby;
+	
+    private String bigMidCategory;
+    private String smallEtcCategory;
+    private String reserveDateAndTime;
+    private String reservePeople;
+    private String preCharge;
+    private String localCharge;
+
 	private String currentTime;
 	
 	public String getKorName() {
@@ -41,48 +42,42 @@ public class Guam {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getCategory() {
-		return category;
+	
+	public String getBigMidCategory() {
+		return bigMidCategory;
 	}
-	public void setCategory(String category) {
-		this.category = category;
+	public void setBigMidCategory(String bigMidCategory) {
+		this.bigMidCategory = bigMidCategory;
 	}
-	public String getTour() {
-		return tour;
+	public String getSmallEtcCategory() {
+		return smallEtcCategory;
 	}
-	public void setTour(String tour) {
-		this.tour = tour;
+	public void setSmallEtcCategory(String smallEtcCategory) {
+		this.smallEtcCategory = smallEtcCategory;
 	}
-
-	public String getReserveDate() {
-		return reserveDate;
+	public String getReserveDateAndTime() {
+		return reserveDateAndTime;
 	}
-	public void setReserveDate(String reserveDate) {
-		this.reserveDate = reserveDate;
+	public void setReserveDateAndTime(String reserveDateAndTime) {
+		this.reserveDateAndTime = reserveDateAndTime;
 	}
-	public String getReserveTime() {
-		return reserveTime;
+	public String getReservePeople() {
+		return reservePeople;
 	}
-	public void setReserveTime(String reserveTime) {
-		this.reserveTime = reserveTime;
+	public void setReservePeople(String reservePeople) {
+		this.reservePeople = reservePeople;
 	}
-	public int getAdult() {
-		return adult;
+	public String getPreCharge() {
+		return preCharge;
 	}
-	public void setAdult(int adult) {
-		this.adult = adult;
+	public void setPreCharge(String preCharge) {
+		this.preCharge = preCharge;
 	}
-	public int getKid() {
-		return kid;
+	public String getLocalCharge() {
+		return localCharge;
 	}
-	public void setKid(int kid) {
-		this.kid = kid;
-	}
-	public int getBaby() {
-		return baby;
-	}
-	public void setBaby(int baby) {
-		this.baby = baby;
+	public void setLocalCharge(String localCharge) {
+		this.localCharge = localCharge;
 	}
 	public String getCurrentTime() {
 		return currentTime;

@@ -20,10 +20,8 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/desktop.css">
-  <link rel="stylesheet" href="css/calendar.css">
 </head>
 
 <body>
@@ -139,8 +137,8 @@
 
     <div class = "form_box">
       <div class = "each_toggle_component">
-        <button class="toggle_button" id = "first_divide_option"><span>대분류 선택</span></button>
-        <div class="toggle_box">
+        <button class="toggle_button" id = "first_divide_option"><span id="bigCategory">대분류 선택</span></button>
+        <div class="toggle_box" >
           <div class="toggle_content">대분류 옵션1</div>
           <div class="toggle_content">대분류 옵션2</div>
           <div class="toggle_content">대분류 옵션3</div>
@@ -286,7 +284,7 @@
           <th class = "col_5">예약금</th>
           <th class = "col_6">현지지불액</th>
         </tr>
-        <tr>
+<!--  <tr>
           <td class = "col_1">투어</td>
           <td class = "col_2">오션벤처호 돌핀크루저</td>
           <td class = "col_3">2018-07-06</td>
@@ -301,7 +299,7 @@
           <td class = "col_4">성인 : 2</td>
           <td class = "col_5">$0.00<br>(0원)</td>
           <td class = "col_6">$0.00</td>
-        </tr>
+        </tr>-->
       </table>
     </div>
     <div class = "total">
