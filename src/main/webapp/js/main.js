@@ -164,25 +164,4 @@ jQuery(function($){
     $('#pop_background').hide();
   });
 
-  // 신청하기 버튼을 클릭 시 발생하는 이벤트
-  $("#complete_btn").on("click", function(){
-    if($("#check_one").is(":checked") == false){
-      alert("공통특약사항을 확인해주세요.");
-      event.preventDefault();
-      $('html,body').animate({scrollTop:$(".checkbox_title:eq(0)").offset().top}, 500);
-      return ;
-    }else if($("#check_two").is(":checked") == false){
-      alert("필독사항을 확인해주세요.");
-      event.preventDefault();
-      $('html,body').animate({scrollTop:$(".checkbox_title:eq(1)").offset().top}, 500);
-      return ;
-    }else if($("#check_three").is(":checked") == false){
-      alert("정보제공에 동의해주세요.");
-      event.preventDefault();
-      $('html,body').animate({scrollTop:$(".checkbox_title:eq(2)").offset().top}, 500);
-      return ;
-    }
-
-  });
-
 });

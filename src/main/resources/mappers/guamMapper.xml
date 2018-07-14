@@ -9,7 +9,7 @@
  		FROM test
  	</select>
  	<insert id = "insertGuamData" parameterType = "com.guam.guam.model.Guam">
- 		INSERT INTO reserve (korName, engName, phone, email, bigMidCategory, smallEtcCategory, reserveDateAndTime, reservePeople, preCharge, localCharge, currentTime)
+ 		INSERT INTO reservation (korName, engName, phone, email, bigMidCategory, smallEtcCategory, reserveDateAndTime, reservePeople, preCharge, localCharge, currentDate)
  		VALUES ( #{korName}, #{engName}, #{phone}, #{email}, #{bigMidCategory}, #{smallEtcCategory}, #{reserveDateAndTime}, #{reservePeople}, #{preCharge}, #{localCharge}, now() )
  	</insert>
  </mapper>

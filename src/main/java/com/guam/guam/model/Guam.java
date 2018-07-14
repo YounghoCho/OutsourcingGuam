@@ -16,7 +16,7 @@ public class Guam {
     private String preCharge;
     private String localCharge;
 
-	private String currentTime;
+	private String currentDate;
 	
 	public String getKorName() {
 		return korName;
@@ -79,11 +79,11 @@ public class Guam {
 	public void setLocalCharge(String localCharge) {
 		this.localCharge = localCharge;
 	}
-	public String getCurrentTime() {
-		return currentTime;
+	public String getCurrentDate() {
+		return currentDate;
 	}
-	public void setCurrentTime(String currentTime) {
-		this.currentTime = currentTime;
+	public void setCurrentDate(String currentDate) {
+		this.currentDate = currentDate;
 	}
 	
 }
