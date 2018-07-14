@@ -35,8 +35,10 @@
   		<div class = "head_menu_icon_area"><img src="img/menu_icon.png"/></div>
  		<div id = "menu_box">
     		<div class = "menu_box_container">
-		      <a href = "addItem" target = "_top"><div class = "each_menu">상품 등록</div></a>
-		    </div>
+				<a href = "./first_divide.jsp" target = "_top"><div class = "each_menu">대분류 설정</div></a>
+				<a href = "./second_divide.jsp" target = "_top"><div class = "each_menu">중분류 설정</div></a>
+				<a href = "./third_divide.jsp" target = "_top"><div class = "each_menu">소분류 설정</div></a>
+				<a href = "./fourth_divide.jsp" target = "_top"><div class = "each_menu">기타분류 설정</div></a>		    </div>
  		</div>
 	</div>
   </div><!-- end header -->
