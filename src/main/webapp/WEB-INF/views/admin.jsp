@@ -29,7 +29,18 @@
 <![endif]-->
 
 <div id = "background_container">
-  <div id = "header"></div>
+  <div id = "header">
+  	<div class ="head_title_container">
+		<div class = "head_title_content">놀다괌 예약 확인 시스템</div>
+  		<div class = "head_menu_icon_area"><img src="img/menu_icon.png"/></div>
+ 		<div id = "menu_box">
+    		<div class = "menu_box_container">
+		      <a href = "addItem" target = "_top"><div class = "each_menu">상품 등록</div></a>
+		    </div>
+ 		</div>
+	</div>
+  </div><!-- end header -->
+  
   <div id = "main">
     <div class = "title_container">
       <div class = "text_box">

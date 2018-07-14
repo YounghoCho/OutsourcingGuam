@@ -17,7 +17,7 @@ import com.guam.guam.bo.GuamBO;
 public class GuamController {
 	@Resource
 	private GuamBO service;
-	
+	//ajax DB insertion
 	@RequestMapping(value="/makeReserve", method = RequestMethod.POST)
 	@ResponseBody
 	public void makeReserve(@RequestBody Map<String, Object> map) throws Exception{
@@ -25,7 +25,7 @@ public class GuamController {
 		System.out.println(map.toString());
 		service.inserReserveData(map);
 	}
-
+	//test call db
 	@RequestMapping(value="/test", method = RequestMethod.GET)
 	@ResponseBody
 	public Object getGuamData() throws Exception{
@@ -34,14 +34,20 @@ public class GuamController {
 		result.put("guamData", service.getGuamData());
 		return result;
 	}
-
+	//home
 	@RequestMapping(value="/")
 	public String goHome() {
 		return "home";
 	}
+	//admin
 	@RequestMapping(value="/admin")
 	public String goAdmin() {
 		return "admin";
+	}
+	//admin item addition
+	@RequestMapping(value="/addItem")
+	public String addItem() {
+		return "addItem";
 	}
 	
 }

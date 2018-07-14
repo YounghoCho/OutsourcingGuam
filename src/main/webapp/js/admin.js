@@ -1,8 +1,15 @@
 jQuery(function($) {
-  $(document).ready(function(){
-    $("#header").load("./admin_header.html");
-    $("#footer").load("./admin_footer.html");
-  });
+	//우측 바 메뉴 이벤트
+	$(function () {
+	    $(".head_menu_icon_area").click(function(){
+	      if($("#menu_box").css("display") === "none") {
+	        var targetHeight = $(window).height() - 60;
+	        $("#menu_box").css({"display": "block", 'height': targetHeight});
+	      }else{
+	        $("#menu_box").css("display", "none");
+	      }
+	    });
+	  });
 
   // 예약 종류, 투어 선택 클릭 시 펼쳐지는 토글 이벤트
   $(function () {
