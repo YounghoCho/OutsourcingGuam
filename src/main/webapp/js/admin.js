@@ -1,3 +1,8 @@
+// 금액표기 시 3자리 마다 콤마를 찍는 함수.
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 jQuery(function($) {
 	//우측 바 메뉴 이벤트
 	$(function () {
@@ -20,13 +25,6 @@ jQuery(function($) {
       else {
         $(this).siblings(".hidden_toggle_box").css("display", "none");
       }
-    });
-  });
-
-  // 삭제 버튼 클릭 시 해당 라인 삭제
-  $(function () {
-    $(".del_btn_container").click(function(){
-      $(this).parent(".tr_container").remove();
     });
   });
 
@@ -71,13 +69,34 @@ jQuery(function($) {
     });
   });
 
-  // 태그 추가를 위한 매소드
+  // 환율 변경를 위한 매소드
+  $(function () {
+    $(".exchange_control_box > button").click(function () {
+      var new_exchange = $("#change_exchange_input").val().replace(/[^(0-9)]\./g, "");
+      new_exchange = parseFloat(new_exchange).toFixed(0);
+      if(new_exchange == ""){
+        alert("환율을 입력하세요.");
+        return;
+      }
+      new_exchange = numberWithCommas(new_exchange) + "원";
+      $("#now_exchange").text(new_exchange);
+    });
+  });
+
+  // 분류 추가를 위한 매소드
   $(function (){
-    $(".category_control_area > button").click(function() {
+    $(".category_control_box > button").click(function() {
       var sel_1 = $("#first_divide_select").children("span").text();
       var sel_2 = $("#second_divide_select").children("span").text();
       var sel_3 = $("#third_divide_select").children("span").text();
       var sel_4 = $("#insert_category_input").val();
+      var adult_price = $("#insert_adult_price").val().replace(/[^(0-9)\.]/g, "");
+      adult_price = parseFloat(adult_price).toFixed(2);
+      var kid_price = $("#insert_kid_price").val().replace(/[^(0-9)\.]/g, "");
+      kid_price = parseFloat(kid_price).toFixed(2);;
+      var baby_price = $("#insert_baby_price").val().replace(/[^(0-9)\.]/g, "");
+      baby_price = parseFloat(baby_price).toFixed(2);
+
       if(sel_1 == "대분류 선택"){
         alert("대분류를 선택하세요.");
         return;
@@ -94,53 +113,53 @@ jQuery(function($) {
         alert("분류명을 입력하세요.");
         return;
       }
+      else if(adult_price == "NaN"){
+        alert("성인 1명 비용을 입력하세요.");
+        return;
+      }
 
-      var add_div = "";
+      adult_price = "$" + numberWithCommas(adult_price);
+      if(kid_price == "NaN"){
+        kid_price = "선택 불가";
+      }else{
+        kid_price = "$" + numberWithCommas(kid_price);
+      }
+      if(baby_price == "NaN"){
+        baby_price = "선택 불가";
+      }else{
+        baby_price = "$" + numberWithCommas(baby_price);
+      }
+
+      var add_div = "<div class = \"tr_container\"><div class = \"td_container\">";
+
       if(!($("#second_divide_select").length)){
-        add_div += "<div class = \"tr_container\">";
-        add_div += "<div class = \"td_container\">";
         add_div += "<div class = \"td_cell\">"+sel_4+"</div>";
-        add_div += "</div>";
-        add_div += "<div class = \"del_btn_container\">";
-        add_div += "<div class = \"del_text\">삭제</div>";
-        add_div += "</div>";
-        add_div += "</div>";
       }else if(!($("#second_divide_select").length)){
-        add_div += "<div class = \"tr_container\">";
-        add_div += "<div class = \"td_container\">";
         add_div += "<div class = \"td_cell\">"+sel_1+"</div>";
         add_div += "<div class = \"td_cell\">"+sel_4+"</div>";
-        add_div += "</div>";
-        add_div += "<div class = \"del_btn_container\">";
-        add_div += "<div class = \"del_text\">삭제</div>";
-        add_div += "</div>";
-        add_div += "</div>";
       }else if(!($("#third_divide_select").length)){
-        add_div += "<div class = \"tr_container\">";
-        add_div += "<div class = \"td_container\">";
         add_div += "<div class = \"td_cell\">"+sel_1+"</div>";
         add_div += "<div class = \"td_cell\">"+sel_2+"</div>";
         add_div += "<div class = \"td_cell\">"+sel_4+"</div>";
-        add_div += "</div>";
-        add_div += "<div class = \"del_btn_container\">";
-        add_div += "<div class = \"del_text\">삭제</div>";
-        add_div += "</div>";
-        add_div += "</div>";
       }else{
-        add_div += "<div class = \"tr_container\">";
-        add_div += "<div class = \"td_container\">";
         add_div += "<div class = \"td_cell\">"+sel_1+"</div>";
         add_div += "<div class = \"td_cell\">"+sel_2+"</div>";
         add_div += "<div class = \"td_cell\">"+sel_3+"</div>";
         add_div += "<div class = \"td_cell\">"+sel_4+"</div>";
-        add_div += "</div>";
-        add_div += "<div class = \"del_btn_container\">";
-        add_div += "<div class = \"del_text\">삭제</div>";
-        add_div += "</div>";
-        add_div += "</div>";
+        add_div += "<div class = \"td_cell_small\">"+adult_price+"</div>";
+        add_div += "<div class = \"td_cell_small\">"+kid_price+"</div>";
+        add_div += "<div class = \"td_cell_small\">"+baby_price+"</div>";
       }
+
+      add_div += "</div><div class = \"del_btn_container\"><div class = \"del_text\">삭제</div></div></div>";
 
       $(".table_container").append(add_div);
     });
   })
+
+  // 삭제 버튼 클릭 시 해당 라인 삭제
+  $(document).on("click",".del_btn_container",function(){
+    $(this).parent(".tr_container").remove();
+  });
+
 });

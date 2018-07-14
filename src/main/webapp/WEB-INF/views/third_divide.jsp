@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-	
-	<!doctype html>
+
+<!doctype html>
 <html class="no-js" lang="ko">
 
 <head>
@@ -69,8 +69,8 @@
         <div class ="title_text">분류 관리</div>
       </div>
       <div class = "category_control_area">
-        <div class = "category_control_area">
-          <div class = "inner_text">태그 추가 :&nbsp;</div>
+        <div class = "category_control_box">
+          <div class = "inner_text">분류 추가 :&nbsp;</div>
           <input type = "text" id = "insert_category_input" placeholder = "분류명을 입력하세요"/>
           <button><span>추가하기</span></button>
         </div>

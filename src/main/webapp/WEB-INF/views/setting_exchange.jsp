@@ -30,38 +30,32 @@
       <div class = "text_box">
         <div class = "each_text"><a href ="./admin.jsp" target ="_top"><p class = "title_font">홈</p></a></div>
         <div class = "each_text"><p class = "title_font">&nbsp;>&nbsp;</p></div>
-        <div class = "each_text"><a href ="./first_divide.jsp" target ="_top"><p class = "title_font">대분류 설정</p></a></div>
+        <div class = "each_text"><a href ="./setting_exchange.jsp" target ="_top"><p class = "title_font">환율 설정</p></a></div>
       </div>
     </div>
     <div class = "list_container">
       <div class = "title_area">
-        <div class ="title_text">분류 관리</div>
+        <div class ="title_text">환율 관리</div>
       </div>
       <div class = "category_control_area">
-        <div class = "category_control_box">
-          <div class = "inner_text">분류 추가 :&nbsp;</div>
-          <input type = "text" id = "insert_category_input" placeholder = "분류명을 입력하세요"/>
-          <button><span>추가하기</span></button>
+        <div class = "exchange_control_box">
+          <div class = "inner_text">환율 변경 :&nbsp;</div>
+          <input type = "text" id = "change_exchange_input" placeholder = "달러-원 환율 입력"/>
+          <button><span>변경하기</span></button>
         </div>
         <div class = "category_list_area">
           <div class = "table_container">
             <div class = "tr_container" style = "font-weight : bold;">
               <div class = "td_container">
-                <div class = "td_cell gray">대분류</div>
+                <div class = "td_cell gray">단위 달러</div>
+                <div class = "td_cell gray" style = "border : none;">원화 환율</div>
               </div>
-              <div class = "del_btn_container gray"><div class = "del_text" style = "color : #777777; text-decoration: none;">삭제</div></div>
             </div>
             <div class = "tr_container">
               <div class = "td_container">
-                <div class = "td_cell">투어</div>
+                <div class = "td_cell">$1.00</div>
+                <div id = "now_exchange" class = "td_cell" style = "border : none;">1,291원</div>
               </div>
-              <div class = "del_btn_container"><div class = "del_text">삭제</div></div>
-            </div>
-            <div class = "tr_container">
-              <div class = "td_container">
-                <div class = "td_cell">투어</div>
-              </div>
-              <div class = "del_btn_container"><div class = "del_text">삭제</div></div>
             </div>
           </div>
         </div>

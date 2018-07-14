@@ -160,14 +160,14 @@ body {
 
 }
 
-#main > .list_container > .category_control_area > .category_control_area {
+#main > .list_container > .category_control_area > .category_control_box, .exchange_control_box {
   display : table;
   overflow : auto;
   width : 100%;
   margin-bottom : 15px;
 }
 
-#main > .list_container > .category_control_area > .category_control_area > .inner_text {
+#main > .list_container > .category_control_area > .category_control_box, .exchange_control_box > .inner_text {
   display : table-cell;
   width : 80px;
   font-family: 'Jeju Gothic', serif;
@@ -175,13 +175,12 @@ body {
   padding-left : 20px;
 }
 
-#main > .list_container > .category_control_area > .category_control_area > button{
+#main > .list_container > .category_control_area > .category_control_box, .exchange_control_box > button{
   position : relative;
   text-align : left;
   height : 30px;
   width : 70px;
   text-align: center;
-  margin-left : 10px;
   background-color : #3b4752;
   border : 1px solid #3b4752;
   border-radius: 8px;
@@ -194,7 +193,7 @@ body {
   -moz-outline-style:none;
 }
 
-#main > .list_container > .category_control_area > .category_control_area > input {
+#main > .list_container > .category_control_area > .category_control_box, .exchange_control_box > input {
   position : relative;
   text-align : left;
   height : 26px;
@@ -206,10 +205,16 @@ body {
   font-size : 12px;
   color : #999999;
   padding-left : 7px;
+  margin-right : 10px;
   cursor : pointer;
   outline: none;
   -moz-outline-style:none;
 }
+
+#main > .list_container > .category_control_area > .category_control_box > .small_size_input {
+  width : 100px;
+}
+
 
 input::-webkit-input-placeholder { color : #999999; } /* Chrome/Opera/Safari */
 #main > .form_box > input::-moz-placeholder { color : #999999; } /* Firefox 19+ */
@@ -239,6 +244,14 @@ input::-webkit-input-placeholder { color : #999999; } /* Chrome/Opera/Safari */
   float : left;
   text-align: center;
   width : 200px;
+  border-right : 1px solid #999999;
+  overflow : auto;
+  padding : 5px 0;
+}
+#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container > .td_container > .td_cell_small {
+  float : left;
+  text-align: center;
+  width : 100px;
   border-right : 1px solid #999999;
   overflow : auto;
   padding : 5px 0;
@@ -337,6 +350,7 @@ input::-webkit-input-placeholder { color : #999999; } /* Chrome/Opera/Safari */
   bottom : 0;
   right : 0;
   display : none;
+  z-index: 100;
   width : 200px;
   background-color: #3b4752;
 }
@@ -389,8 +403,10 @@ input::-webkit-input-placeholder { color : #999999; } /* Chrome/Opera/Safari */
 
 #header > .head_title_container > .head_menu_icon_area {
   overflow : auto;
-  float : right;
-  padding : 15px 0;
+  position : fixed;
+  top : 0;
+  right : 0;
+  padding: 15px 20px 0 0;
   cursor : pointer;
 }
 
