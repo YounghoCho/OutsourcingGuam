@@ -90,12 +90,6 @@ jQuery(function($) {
       var sel_2 = $("#second_divide_select").children("span").text();
       var sel_3 = $("#third_divide_select").children("span").text();
       var sel_4 = $("#insert_category_input").val();
-      var adult_price = $("#insert_adult_price").val().replace(/[^(0-9)\.]/g, "");
-      adult_price = parseFloat(adult_price).toFixed(2);
-      var kid_price = $("#insert_kid_price").val().replace(/[^(0-9)\.]/g, "");
-      kid_price = parseFloat(kid_price).toFixed(2);;
-      var baby_price = $("#insert_baby_price").val().replace(/[^(0-9)\.]/g, "");
-      baby_price = parseFloat(baby_price).toFixed(2);
 
       if(sel_1 == "대분류 선택"){
         alert("대분류를 선택하세요.");
@@ -118,21 +112,9 @@ jQuery(function($) {
         return;
       }
 
-      adult_price = "$" + numberWithCommas(adult_price);
-      if(kid_price == "NaN"){
-        kid_price = "선택 불가";
-      }else{
-        kid_price = "$" + numberWithCommas(kid_price);
-      }
-      if(baby_price == "NaN"){
-        baby_price = "선택 불가";
-      }else{
-        baby_price = "$" + numberWithCommas(baby_price);
-      }
-
       var add_div = "<div class = \"tr_container\"><div class = \"td_container\">";
 
-      if(!($("#second_divide_select").length)){
+      if(!($("#first_divide_select").length)){
         add_div += "<div class = \"td_cell\">"+sel_4+"</div>";
       }else if(!($("#second_divide_select").length)){
         add_div += "<div class = \"td_cell\">"+sel_1+"</div>";
@@ -142,6 +124,26 @@ jQuery(function($) {
         add_div += "<div class = \"td_cell\">"+sel_2+"</div>";
         add_div += "<div class = \"td_cell\">"+sel_4+"</div>";
       }else{
+
+        var adult_price = $("#insert_adult_price").val().replace(/[^(0-9)\.]/g, "");
+        adult_price = parseFloat(adult_price).toFixed(2);
+        var kid_price = $("#insert_kid_price").val().replace(/[^(0-9)\.]/g, "");
+        kid_price = parseFloat(kid_price).toFixed(2);;
+        var baby_price = $("#insert_baby_price").val().replace(/[^(0-9)\.]/g, "");
+        baby_price = parseFloat(baby_price).toFixed(2);
+
+        adult_price = "$" + numberWithCommas(adult_price);
+        if(kid_price == "NaN"){
+          kid_price = "선택 불가";
+        }else{
+          kid_price = "$" + numberWithCommas(kid_price);
+        }
+        if(baby_price == "NaN"){
+          baby_price = "선택 불가";
+        }else{
+          baby_price = "$" + numberWithCommas(baby_price);
+        }
+
         add_div += "<div class = \"td_cell\">"+sel_1+"</div>";
         add_div += "<div class = \"td_cell\">"+sel_2+"</div>";
         add_div += "<div class = \"td_cell\">"+sel_3+"</div>";
@@ -155,7 +157,8 @@ jQuery(function($) {
 
       $(".table_container").append(add_div);
     });
-  })
+  });
+
 
   // 삭제 버튼 클릭 시 해당 라인 삭제
   $(document).on("click",".del_btn_container",function(){
