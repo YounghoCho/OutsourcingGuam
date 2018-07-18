@@ -160,14 +160,21 @@ body {
 
 }
 
-#main > .list_container > .category_control_area > .category_control_box, .exchange_control_box {
+#main > .list_container > .category_control_area > .category_control_box {
   display : table;
   overflow : auto;
   width : 100%;
   margin-bottom : 15px;
 }
 
-#main > .list_container > .category_control_area > .category_control_box, .exchange_control_box > .inner_text {
+#main > .list_container > .category_control_area > .exchange_control_box {
+  display : table;
+  overflow : auto;
+  width : 100%;
+  margin-bottom : 15px;
+}
+
+#main > .list_container > .category_control_area > .category_control_box > .inner_text {
   display : table-cell;
   width : 80px;
   font-family: 'Jeju Gothic', serif;
@@ -175,7 +182,15 @@ body {
   padding-left : 20px;
 }
 
-#main > .list_container > .category_control_area > .category_control_box, .exchange_control_box > button{
+#main > .list_container > .category_control_area > .exchange_control_box > .inner_text {
+  display : table-cell;
+  width : 80px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 14px;
+  padding-left : 20px;
+}
+
+#main > .list_container > .category_control_area > .category_control_box > button{
   position : relative;
   text-align : left;
   height : 30px;
@@ -193,7 +208,44 @@ body {
   -moz-outline-style:none;
 }
 
-#main > .list_container > .category_control_area > .category_control_box, .exchange_control_box > input {
+#main > .list_container > .category_control_area > .exchange_control_box > button{
+  position : relative;
+  text-align : left;
+  height : 30px;
+  width : 70px;
+  text-align: center;
+  background-color : #3b4752;
+  border : 1px solid #3b4752;
+  border-radius: 8px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 12px;
+  color : #ffffff;
+  padding-left : 7px;
+  cursor : pointer;
+  outline: none;
+  -moz-outline-style:none;
+}
+
+
+#main > .list_container > .category_control_area > .category_control_box > input {
+  position : relative;
+  text-align : left;
+  height : 26px;
+  width : 200px;
+  background-color : #ffffff;
+  border : 1px solid #999999;
+  border-radius: 8px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 12px;
+  color : #999999;
+  padding-left : 7px;
+  margin-right : 10px;
+  cursor : pointer;
+  outline: none;
+  -moz-outline-style:none;
+}
+
+#main > .list_container > .category_control_area > .exchange_control_box > input {
   position : relative;
   text-align : left;
   height : 26px;
