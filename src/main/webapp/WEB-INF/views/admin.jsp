@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-	
-	<!doctype html>
+
+<!doctype html>
 <html class="no-js" lang="ko">
 
 <head>
@@ -30,23 +30,21 @@
 
 <div id = "background_container">
   <div id = "header">
-  	<div class ="head_title_container">
-		<div class = "head_title_content">놀다괌 예약 확인 시스템</div>
-  		<div class = "head_menu_icon_area"><img src="img/menu_icon.png"/></div>
- 		<div id = "menu_box">
-    		<div class = "menu_box_container">
-				<a href = "./first_divide.jsp" target = "_top"><div class = "each_menu">대분류 설정</div></a>
-				<a href = "./second_divide.jsp" target = "_top"><div class = "each_menu">중분류 설정</div></a>
-				<a href = "./third_divide.jsp" target = "_top"><div class = "each_menu">소분류 설정</div></a>
-				<a href = "./fourth_divide.jsp" target = "_top"><div class = "each_menu">기타분류 설정</div></a>		    </div>
- 		</div>
-	</div>
-  </div><!-- end header -->
-  
+    <div class ="head_title_container">
+      <div class = "head_title_content">놀다괌 예약 확인 시스템</div>
+      <div class = "head_menu_icon_area"><img src="img/menu_icon.png"/></div>
+      <div id = "menu_box">
+        <div class = "menu_box_container">
+          <a href = "./setting_option.jsp" target = "_top"><div class = "each_menu">옵션 설정</div></a>
+          <a href = "./setting_exchange.jsp" target = "_top"><div class = "each_menu">환율 설정</div></a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id = "main">
     <div class = "title_container">
       <div class = "text_box">
-        <div class = "each_text"><a href ="./admin.jsp" target ="_top"><p class = "title_font">홈</p></a></div>
+        <div class = "each_text"><a href ="./admin.html" target ="_top"><p class = "title_font">홈</p></a></div>
       </div>
     </div>
     <div class = "list_container">
@@ -155,8 +153,5 @@
     </div>
   </div>
 </div>
-
-<!-- Add your site or application content here -->
-
 </body>
 </html>

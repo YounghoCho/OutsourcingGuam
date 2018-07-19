@@ -91,48 +91,20 @@ body {
   float : left;
 }
 
-#main > .list_container > .category_select_area > .each_select_box > button{
+#main > .list_container > .category_select_area > .each_select_box > input {
   position : relative;
   text-align : left;
-  float : left;
-  height : 30px;
+  height : 26px;
   width : 200px;
-  background-color : #eeeeee;
-  border : 1px solid #3b4752;
-  border-radius: 8px;
+  background-color : #ffffff;
+  border : 1px solid #cccccc;
   font-family: 'Jeju Gothic', serif;
   font-size : 12px;
-  color : #3b4752;
+  color : #999999;
   padding-left : 7px;
   cursor : pointer;
   outline: none;
   -moz-outline-style:none;
-}
-
-#main > .list_container > .category_select_area > .each_select_box > .toggle_box {
-  position : absolute;
-  display : none;
-  overflow : auto;
-  width : 200px;
-  margin-top : 30px;
-  max-height : 300px;
-  z-index: 100;
-}
-
-#main > .list_container > .category_select_area > .each_select_box > .toggle_box > .toggle_content {
-  width : 90%;
-  width : -webkit-calc(100% - 12px); /* for Chrome, Safari */
-  width :    -moz-calc(100% - 12px); /* for Firefox */
-  width :         calc(100% - 12px); /* for IE */
-  height : 24px;
-  font-size : 12px;
-  padding : 7px 6px 0;
-  background-color : rgba( 230, 230, 230, 0.9 );
-}
-
-#main > .list_container > .category_select_area > .each_select_box > .toggle_box > .toggle_content:hover{
-  background-color : rgba(200, 105, 0, 0.9);
-  color : #ffffff;
 }
 
 #main > .list_container > .category_select_area > .each_select_box > .middle_text{
@@ -142,73 +114,31 @@ body {
   padding : 0 5px;
 }
 
-#main > .list_container > .title_area {
-  overflow : auto;
-  width : 100%;
-  border-bottom : 1px solid #3b4752;
-  margin : 30px 0 20px;
-  padding-bottom : 5px;
-}
-
-#main > .list_container > .title_area > .title_text {
+#main > .list_container > .rectangle_select_box {
+  display: table;
   float : left;
-  color : black;
-  font-size : 16px;
-}
-
-#main > .list_container > .category_control_area {
-
-}
-
-#main > .list_container > .category_control_area > .category_control_box {
-  display : table;
-  overflow : auto;
-  width : 100%;
+  margin-top : 5px;
   margin-bottom : 15px;
 }
 
-#main > .list_container > .category_control_area > .exchange_control_box {
-  display : table;
-  overflow : auto;
-  width : 100%;
-  margin-bottom : 15px;
-}
-
-#main > .list_container > .category_control_area > .category_control_box > .inner_text {
-  display : table-cell;
-  width : 80px;
-  font-family: 'Jeju Gothic', serif;
-  font-size : 14px;
-  padding-left : 20px;
-}
-
-#main > .list_container > .category_control_area > .exchange_control_box > .inner_text {
-  display : table-cell;
-  width : 80px;
-  font-family: 'Jeju Gothic', serif;
-  font-size : 14px;
-  padding-left : 20px;
-}
-
-#main > .list_container > .category_control_area > .category_control_box > button{
+#main > .list_container > .rectangle_select_box > input {
   position : relative;
   text-align : left;
-  height : 30px;
-  width : 70px;
-  text-align: center;
-  background-color : #3b4752;
-  border : 1px solid #3b4752;
-  border-radius: 8px;
+  height : 26px;
+  width : 200px;
+  background-color : #ffffff;
+  border : 1px solid #cccccc;
   font-family: 'Jeju Gothic', serif;
   font-size : 12px;
-  color : #ffffff;
+  color : #999999;
   padding-left : 7px;
+  margin-right : 5px;
   cursor : pointer;
   outline: none;
   -moz-outline-style:none;
 }
 
-#main > .list_container > .category_control_area > .exchange_control_box > button{
+#main > .list_container > .rectangle_select_box > button{
   position : relative;
   text-align : left;
   height : 30px;
@@ -227,7 +157,45 @@ body {
 }
 
 
-#main > .list_container > .category_control_area > .category_control_box > input {
+#main > .list_container > .exchange_control_area {
+  width : 100%;
+  overflow : auto;
+}
+
+#main > .list_container > .exchange_control_area > .exchange_control_box {
+  display : table;
+  overflow : auto;
+  width : 100%;
+  margin-bottom : 15px;
+}
+
+#main > .list_container > .exchange_control_area > .exchange_control_box > .inner_text {
+  display : table-cell;
+  width : 80px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 14px;
+  padding-left : 20px;
+}
+
+#main > .list_container > .exchange_control_area > .exchange_control_box > button{
+  position : relative;
+  text-align : left;
+  height : 30px;
+  width : 70px;
+  text-align: center;
+  background-color : #3b4752;
+  border : 1px solid #3b4752;
+  border-radius: 8px;
+  font-family: 'Jeju Gothic', serif;
+  font-size : 12px;
+  color : #ffffff;
+  padding-left : 7px;
+  cursor : pointer;
+  outline: none;
+  -moz-outline-style:none;
+}
+
+#main > .list_container > .exchange_control_area > .exchange_control_box > input {
   position : relative;
   text-align : left;
   height : 26px;
@@ -244,55 +212,32 @@ body {
   outline: none;
   -moz-outline-style:none;
 }
-
-#main > .list_container > .category_control_area > .exchange_control_box > input {
-  position : relative;
-  text-align : left;
-  height : 26px;
-  width : 200px;
-  background-color : #ffffff;
-  border : 1px solid #999999;
-  border-radius: 8px;
-  font-family: 'Jeju Gothic', serif;
-  font-size : 12px;
-  color : #999999;
-  padding-left : 7px;
-  margin-right : 10px;
-  cursor : pointer;
-  outline: none;
-  -moz-outline-style:none;
-}
-
-#main > .list_container > .category_control_area > .category_control_box > .small_size_input {
-  width : 100px;
-}
-
 
 input::-webkit-input-placeholder { color : #999999; } /* Chrome/Opera/Safari */
 #main > .form_box > input::-moz-placeholder { color : #999999; } /* Firefox 19+ */
 #main > .form_box > input:-ms-input-placeholder { color : #999999; } /* IE 10+ */
 #main > .form_box > input:-moz-placeholder { color : #999999; } /* Firefox 18- */
 
-#main > .list_container > .category_control_area > .category_list_area {
+#main > .list_container > .exchange_control_area > .category_list_area {
 
 }
 
-#main > .list_container > .category_control_area > .category_list_area > .table_container{
+#main > .list_container > .exchange_control_area > .category_list_area > .table_container{
   overflow : auto;
   background-color : white;
 }
 
-#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container{
+#main > .list_container > .exchange_control_area > .category_list_area > .table_container > .tr_container{
   overflow : auto;
 }
 
-#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container > .td_container {
+#main > .list_container > .exchange_control_area > .category_list_area > .table_container > .tr_container > .td_container {
   float : left;
   overflow : auto;
   cursor : pointer;
 }
 
-#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container > .td_container > .td_cell {
+#main > .list_container > .exchange_control_area > .category_list_area > .table_container > .tr_container > .td_container > .td_cell {
   float : left;
   text-align: center;
   width : 200px;
@@ -300,7 +245,7 @@ input::-webkit-input-placeholder { color : #999999; } /* Chrome/Opera/Safari */
   overflow : auto;
   padding : 5px 0;
 }
-#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container > .td_container > .td_cell_small {
+#main > .list_container > .exchange_control_area > .category_list_area > .table_container > .tr_container > .td_container > .td_cell_small {
   float : left;
   text-align: center;
   width : 100px;
@@ -309,13 +254,13 @@ input::-webkit-input-placeholder { color : #999999; } /* Chrome/Opera/Safari */
   padding : 5px 0;
 }
 
-#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container > .del_btn_container {
+#main > .list_container > .exchange_control_area > .category_list_area > .table_container > .tr_container > .del_btn_container {
   float : left;
   overflow : auto;
   cursor : alias;
 }
 
-#main > .list_container > .category_control_area > .category_list_area > .table_container > .tr_container > .del_btn_container > .del_text {
+#main > .list_container > .exchange_control_area > .category_list_area > .table_container > .tr_container > .del_btn_container > .del_text {
   float : left;
   width : 50px;
   text-align: center;
