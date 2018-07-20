@@ -16,6 +16,11 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/admin.css">
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="js/admin.js"></script>
+
 </head>
 
 <body>
@@ -24,20 +29,28 @@
 <![endif]-->
 
 <div id = "background_container">
-  <div id = "header"></div>
+  <div id = "header">
+    <div class ="head_title_container">
+      <div class = "head_title_content">놀다괌 예약 확인 시스템</div>
+      <div class = "head_menu_icon_area"><img src="img/menu_icon.png"/></div>
+      <div id = "menu_box">
+        <div class = "menu_box_container">
+          <a href = "./setting_option.jsp" target = "_top"><div class = "each_menu">옵션 설정</div></a>
+          <a href = "./setting_exchange.jsp" target = "_top"><div class = "each_menu">환율 설정</div></a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div id = "main">
     <div class = "title_container">
       <div class = "text_box">
-        <div class = "each_text"><a href ="./admin.jsp" target ="_top"><p class = "title_font">홈</p></a></div>
+        <div class = "each_text"><a href ="./admin.html" target ="_top"><p class = "title_font">홈</p></a></div>
         <div class = "each_text"><p class = "title_font">&nbsp;>&nbsp;</p></div>
-        <div class = "each_text"><a href ="./setting_exchange.jsp" target ="_top"><p class = "title_font">환율 설정</p></a></div>
+        <div class = "each_text"><a href ="./setting_exchange.html" target ="_top"><p class = "title_font">환율 설정</p></a></div>
       </div>
     </div>
     <div class = "list_container">
-      <div class = "title_area">
-        <div class ="title_text">환율 관리</div>
-      </div>
-      <div class = "category_control_area">
+      <div class = "exchange_control_area">
         <div class = "exchange_control_box">
           <div class = "inner_text">환율 변경 :&nbsp;</div>
           <input type = "text" id = "change_exchange_input" placeholder = "달러-원 환율 입력"/>
@@ -62,14 +75,14 @@
       </div>
     </div>
   </div>
-  <div id = "footer"></div>
+  <div id = "footer">
+    <div class = "copyright_area">
+      <div class = "text_box">
+        <p>Copyright © 2017 AUTOPUS. All rights reserved.</p>
+      </div>
+    </div>
+
+  </div>
 </div>
-
-<!-- Add your site or application content here -->
-
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="js/admin.js"></script>
-
 </body>
 </html>
