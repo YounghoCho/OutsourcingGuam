@@ -66,11 +66,10 @@
       </div>
       <div class = "rectangle_select_box">
         <input type = "text" id = "insert_adult_price" class = "small_size_input" placeholder = "성인 1명 비용($)"/>
-        <div class = "middle_text">&nbsp;>&nbsp;</div>
+        &nbsp;>&nbsp;
         <input type = "text" id = "insert_kid_price" class = "small_size_input" placeholder = "소아 1명 비용($)"/>
-        <div class = "middle_text">&nbsp;>&nbsp;</div>
+        &nbsp;>&nbsp;
         <input type = "text" id = "insert_baby_price" class = "small_size_input" placeholder = "유아 1명 비용($)"/>
-        <div class = "middle_text">&nbsp;>&nbsp;</div>
         <button><span>추가하기</span></button>
       </div>
 
