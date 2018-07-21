@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class Guam {
+	private int resIdx;
 	private String korName;
 	private String engName;
 	private String phone;
@@ -85,5 +86,10 @@ public class Guam {
 	public void setCurrentDate(String currentDate) {
 		this.currentDate = currentDate;
 	}
-	
+	public int getResIdx() {
+		return resIdx;
+	}
+	public void setResIdx(int resIdx) {
+		this.resIdx = resIdx;
+	}	
 }

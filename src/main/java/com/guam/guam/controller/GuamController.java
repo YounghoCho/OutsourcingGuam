@@ -25,15 +25,7 @@ public class GuamController {
 		System.out.println(map.toString());
 		service.inserReserveData(map);
 	}
-	//test call db
-	@RequestMapping(value="/test", method = RequestMethod.GET)
-	@ResponseBody
-	public Object getGuamData() throws Exception{
-		System.out.println("컨트롤러 인");
-		Map<String, Object> result = new HashMap<>();
-		result.put("guamData", service.getGuamData());
-		return result;
-	}
+
 	//home
 	@RequestMapping(value="/")
 	public String goHome() {
@@ -45,9 +37,13 @@ public class GuamController {
 		return "admin";
 	}
 	//admin item addition
-	@RequestMapping(value="/addItem")
-	public String addItem() {
-		return "addItem";
+	@RequestMapping(value="/setOptions")
+	public String SetOptions() {
+		return "setting_option";
 	}
-	
+	//admin item set exchange ration
+	@RequestMapping(value="/setExchangeRate")
+	public String setExchangeRate() {
+		return "setting_exchange";
+	}	
 }

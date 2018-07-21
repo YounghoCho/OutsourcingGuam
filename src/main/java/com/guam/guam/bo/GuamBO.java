@@ -9,7 +9,12 @@ import com.guam.guam.model.Guam;
 
 @Service
 public interface GuamBO {
-	public List<Guam> getGuamData();
-
+	
 	public void inserReserveData(Map<String, Object> map);
+
+	public List<Guam> getReserveList();
+
+	public int getListCount();
+
+	public void deleteReserveData(int resIdx);
 }

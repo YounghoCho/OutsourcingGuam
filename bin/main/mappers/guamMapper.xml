@@ -4,14 +4,24 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
     
  <mapper namespace = "guam">
- 	<select id = "getGuamData" resultType = "com.guam.guam.model.Guam">
- 		SELECT *
- 		FROM test
+ 	<select id = "getListCount" resultType = "int">
+ 		SELECT count(*) as count
+ 		FROM reservation
  	</select>
+ 	<select id = "getReserveList" resultType = "com.guam.guam.model.Guam">
+ 		SELECT *
+ 		FROM reservation
+ 	</select>
+ 	
  	<insert id = "insertGuamData" parameterType = "com.guam.guam.model.Guam">
  		INSERT INTO reservation (korName, engName, phone, email, bigMidCategory, smallEtcCategory, reserveDateAndTime, reservePeople, preCharge, localCharge, currentDate)
  		VALUES ( #{korName}, #{engName}, #{phone}, #{email}, #{bigMidCategory}, #{smallEtcCategory}, #{reserveDateAndTime}, #{reservePeople}, #{preCharge}, #{localCharge}, now() )
  	</insert>
+ 	<delete id = "deleteReserveData" parameterType = "com.guam.guam.model.Guam">
+		DELETE 
+		FROM reservation
+		WHERE resIdx = #{resIdx}
+ 	</delete>
  </mapper>
  
  

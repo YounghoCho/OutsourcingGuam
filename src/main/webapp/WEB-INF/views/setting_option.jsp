@@ -35,8 +35,9 @@
       <div class = "head_menu_icon_area"><img src="img/menu_icon.png"/></div>
       <div id = "menu_box">
         <div class = "menu_box_container">
-          <a href = "./setting_option.jsp" target = "_top"><div class = "each_menu">옵션 설정</div></a>
-          <a href = "./setting_exchange.jsp" target = "_top"><div class = "each_menu">환율 설정</div></a>
+     	  <a href = "admin" target = "_top"><div class = "each_menu">예약자 정보</div></a>
+          <a href = "setOptions" target = "_top"><div class = "each_menu">옵션 설정</div></a>
+          <a href = "setExchangeRate" target = "_top"><div class = "each_menu">환율 설정</div></a>
         </div>
       </div>
     </div>
@@ -44,9 +45,9 @@
   <div id = "main">
     <div class = "title_container">
       <div class = "text_box">
-        <div class = "each_text"><a href ="./admin.html" target ="_top"><p class = "title_font">홈</p></a></div>
+        <div class = "each_text"><a href ="admin" target ="_top"><p class = "title_font">홈</p></a></div>
         <div class = "each_text"><p class = "title_font">&nbsp;>&nbsp;</p></div>
-        <div class = "each_text"><a href ="./setting_option.html" target ="_top"><p class = "title_font">옵션 설정</p></a></div>
+        <div class = "each_text"><a href ="setOptions" target ="_top"><p class = "title_font">옵션 설정</p></a></div>
       </div>
     </div>
     <div class = "list_container">
@@ -65,8 +66,11 @@
       </div>
       <div class = "rectangle_select_box">
         <input type = "text" id = "insert_adult_price" class = "small_size_input" placeholder = "성인 1명 비용($)"/>
+        <div class = "middle_text">&nbsp;>&nbsp;</div>
         <input type = "text" id = "insert_kid_price" class = "small_size_input" placeholder = "소아 1명 비용($)"/>
+        <div class = "middle_text">&nbsp;>&nbsp;</div>
         <input type = "text" id = "insert_baby_price" class = "small_size_input" placeholder = "유아 1명 비용($)"/>
+        <div class = "middle_text">&nbsp;>&nbsp;</div>
         <button><span>추가하기</span></button>
       </div>
 

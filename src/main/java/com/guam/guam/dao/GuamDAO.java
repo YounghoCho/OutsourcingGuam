@@ -16,11 +16,6 @@ public class GuamDAO {
 	
 	@Autowired
 	private SqlSessionTemplate sqlsession;
-	
-	public List<Guam> getGuamData(){
-		System.out.println("dao ¿Œ");
-		return sqlsession.selectList(NAMESPACE_GUAM + "getGuamData");
-	}
 
 	public void insertReserveDate(Map<String, Object> map) {
 		HashMap<String, Object> paramMap = new HashMap<>();
@@ -38,5 +33,18 @@ public class GuamDAO {
 //		paramMap.put("baby", Integer.parseInt((String)map.get("baby")));
 				
 		sqlsession.insert(NAMESPACE_GUAM + "insertGuamData", paramMap);
+	}
+
+	public List<Guam> getReserveList() {
+		return sqlsession.selectList(NAMESPACE_GUAM + "getReserveList");
+	}
+
+	public int getListCount() {
+		return sqlsession.selectOne(NAMESPACE_GUAM + "getListCount");
+	}
+
+	public void deleteReserveData(int resIdx) {
+		System.out.println("in dao" + "resIdx is"+resIdx);
+		sqlsession.delete(NAMESPACE_GUAM + "deleteReserveData", resIdx);
 	}
 }

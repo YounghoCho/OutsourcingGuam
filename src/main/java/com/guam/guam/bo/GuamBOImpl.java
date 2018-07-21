@@ -14,16 +14,25 @@ import com.guam.guam.model.Guam;
 public class GuamBOImpl implements GuamBO{
 	@Resource(name = "GuamDAO")
 	private GuamDAO dao;
-	
-	@Override
-	public List<Guam> getGuamData() {
-		System.out.println("boimple ¿Œ");
-		return dao.getGuamData();
-	}
 
 	@Override
 	public void inserReserveData(Map<String, Object> map) {
 		dao.insertReserveDate(map);		
+	}
+
+	@Override
+	public List<Guam> getReserveList() {
+		return dao.getReserveList();
+	}
+
+	@Override
+	public int getListCount() {
+		return dao.getListCount();
+	}
+
+	@Override
+	public void deleteReserveData(int resIdx) {
+		dao.deleteReserveData(resIdx);		
 	}
 	
 }

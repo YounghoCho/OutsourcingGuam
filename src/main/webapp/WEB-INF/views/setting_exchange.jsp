@@ -35,8 +35,9 @@
       <div class = "head_menu_icon_area"><img src="img/menu_icon.png"/></div>
       <div id = "menu_box">
         <div class = "menu_box_container">
-          <a href = "./setting_option.jsp" target = "_top"><div class = "each_menu">옵션 설정</div></a>
-          <a href = "./setting_exchange.jsp" target = "_top"><div class = "each_menu">환율 설정</div></a>
+     	  <a href = "admin" target = "_top"><div class = "each_menu">예약자 정보</div></a>        
+          <a href = "setOptions" target = "_top"><div class = "each_menu">옵션 설정</div></a>
+          <a href = "setExchangeRate" target = "_top"><div class = "each_menu">환율 설정</div></a>
         </div>
       </div>
     </div>
@@ -44,16 +45,16 @@
   <div id = "main">
     <div class = "title_container">
       <div class = "text_box">
-        <div class = "each_text"><a href ="./admin.html" target ="_top"><p class = "title_font">홈</p></a></div>
+        <div class = "each_text"><a href ="admin" target ="_top"><p class = "title_font">홈</p></a></div>
         <div class = "each_text"><p class = "title_font">&nbsp;>&nbsp;</p></div>
-        <div class = "each_text"><a href ="./setting_exchange.html" target ="_top"><p class = "title_font">환율 설정</p></a></div>
+        <div class = "each_text"><a href = "setExchangeRate" target ="_top"><p class = "title_font">환율 설정</p></a></div>
       </div>
     </div>
     <div class = "list_container">
       <div class = "exchange_control_area">
         <div class = "exchange_control_box">
           <div class = "inner_text">환율 변경 :&nbsp;</div>
-          <input type = "text" id = "change_exchange_input" placeholder = "달러-원 환율 입력"/>
+          <input type = "text" id = "change_exchange_input" placeholder = "환율 입력 (KRW)"/>
           <button><span>변경하기</span></button>
         </div>
         <div class = "category_list_area">

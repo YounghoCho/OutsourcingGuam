@@ -32,7 +32,7 @@
   <div id = "main">
     <div class = "title_container">
       <div class = "text_box">
-        <div class = "each_text"><a href ="./admin.jsp" target ="_top"><p class = "title_font">홈</p></a></div>
+        <div class = "each_text"><a href ="admin" target ="_top"><p class = "title_font">홈</p></a></div>
         <div class = "each_text"><p class = "title_font">&nbsp;>&nbsp;</p></div>
         <div class = "each_text"><p class = "title_font">예약 확인</p></div>
       </div>
