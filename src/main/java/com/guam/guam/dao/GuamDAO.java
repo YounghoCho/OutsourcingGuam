@@ -47,4 +47,16 @@ public class GuamDAO {
 		System.out.println("in dao" + "resIdx is"+resIdx);
 		sqlsession.delete(NAMESPACE_GUAM + "deleteReserveData", resIdx);
 	}
+
+	public void insertOptions(Map<String, Object> map) {
+		HashMap<String, Object> paramMap = new HashMap<>();
+		paramMap.put("opBig", map.get("op1"));
+		paramMap.put("opMid", map.get("op2"));
+		paramMap.put("opSmall", map.get("op3"));
+		paramMap.put("opAdult", map.get("op4"));
+		paramMap.put("opKid", map.get("op5"));
+		paramMap.put("opBaby", map.get("op6"));
+		
+		sqlsession.insert(NAMESPACE_GUAM + "insertOptions", paramMap);		
+	}
 }

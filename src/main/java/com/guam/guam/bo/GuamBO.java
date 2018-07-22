@@ -17,4 +17,6 @@ public interface GuamBO {
 	public int getListCount();
 
 	public void deleteReserveData(int resIdx);
+
+	public void insertOptions(Map<String, Object> map);
 }

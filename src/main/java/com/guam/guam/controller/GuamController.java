@@ -17,14 +17,6 @@ import com.guam.guam.bo.GuamBO;
 public class GuamController {
 	@Resource
 	private GuamBO service;
-	//ajax DB insertion
-	@RequestMapping(value="/makeReserve", method = RequestMethod.POST)
-	@ResponseBody
-	public void makeReserve(@RequestBody Map<String, Object> map) throws Exception{
-		System.out.println("컨트롤러 인(삽입)");
-		System.out.println(map.toString());
-		service.inserReserveData(map);
-	}
 
 	//home
 	@RequestMapping(value="/")

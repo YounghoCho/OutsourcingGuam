@@ -22,6 +22,11 @@
 		FROM reservation
 		WHERE resIdx = #{resIdx}
  	</delete>
+ 	<insert id = "insertOptions" parameterType = "com.guam.guam.model.Guam">
+ 		INSERT INTO options (opBig, opMid, opSmall, opAdult, opKid, opBaby)
+ 		VALUES ( #{opBig}, #{opMid}, #{opSmall}, #{opAdult}, #{opKid}, #{opBaby})
+ 	</insert>
+ 	
  </mapper>
  
  

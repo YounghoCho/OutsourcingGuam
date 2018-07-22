@@ -20,7 +20,7 @@
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="js/admin.js"></script>
-
+  <script src="js/admin_function.js"></script>
 </head>
 
 <body style = "min-width: 1280px;">
@@ -70,12 +70,14 @@
         <input type = "text" id = "insert_kid_price" class = "small_size_input" placeholder = "소아 1명 비용($)"/>
         &nbsp;>&nbsp;
         <input type = "text" id = "insert_baby_price" class = "small_size_input" placeholder = "유아 1명 비용($)"/>
-        <button><span>추가하기</span></button>
+        <button id="tictoc"><span id="addOptions">추가하기</span></button>
       </div>
 
       <div class = "exchange_control_area">
         <div class = "category_list_area">
-          <div class = "table_container">
+
+          <div class = "table_container" id="checkReserve">
+          
             <div class = "tr_container" style = "font-weight : bold;">
               <div class = "td_container">
                 <div class = "td_cell gray">대분류</div>
@@ -87,6 +89,7 @@
               </div>
               <div class = "del_btn_container gray"><div class = "del_text" style = "color : #777777; text-decoration: none;">삭제</div></div>
             </div>
+            
             <div class = "tr_container">
               <div class = "td_container">
                 <div class = "td_cell">대분류 예시 0</div>

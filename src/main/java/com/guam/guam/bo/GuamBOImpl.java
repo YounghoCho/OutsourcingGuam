@@ -34,5 +34,10 @@ public class GuamBOImpl implements GuamBO{
 	public void deleteReserveData(int resIdx) {
 		dao.deleteReserveData(resIdx);		
 	}
+
+	@Override
+	public void insertOptions(Map<String, Object> map) {
+		dao.insertOptions(map);		
+	}
 	
 }
