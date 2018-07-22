@@ -30,24 +30,9 @@ public class GuamDAO {
 		paramMap.put("reservePeople", map.get("reservePeople"));
 		paramMap.put("preCharge", map.get("preCharge"));
 		paramMap.put("localCharge", map.get("localCharge"));
-//		paramMap.put("baby", Integer.parseInt((String)map.get("baby")));
-				
+//		paramMap.put("baby", Integer.parseInt((String)map.get("baby")));				
 		sqlsession.insert(NAMESPACE_GUAM + "insertGuamData", paramMap);
 	}
-
-	public List<Guam> getReserveList() {
-		return sqlsession.selectList(NAMESPACE_GUAM + "getReserveList");
-	}
-
-	public int getListCount() {
-		return sqlsession.selectOne(NAMESPACE_GUAM + "getListCount");
-	}
-
-	public void deleteReserveData(int resIdx) {
-		System.out.println("in dao" + "resIdx is"+resIdx);
-		sqlsession.delete(NAMESPACE_GUAM + "deleteReserveData", resIdx);
-	}
-
 	public void insertOptions(Map<String, Object> map) {
 		HashMap<String, Object> paramMap = new HashMap<>();
 		paramMap.put("opBig", map.get("op1"));
@@ -59,4 +44,35 @@ public class GuamDAO {
 		
 		sqlsession.insert(NAMESPACE_GUAM + "insertOptions", paramMap);		
 	}
+	
+	public List<Guam> getReserveList() {
+		return sqlsession.selectList(NAMESPACE_GUAM + "getReserveList");
+	}
+	public List<Guam> getOptionList() {
+		return sqlsession.selectList(NAMESPACE_GUAM + "getOptionList");
+	}
+	
+	public int getListCount() {
+		return sqlsession.selectOne(NAMESPACE_GUAM + "getListCount");
+	}
+	public int getOptionCount() {
+		return sqlsession.selectOne(NAMESPACE_GUAM + "getOptionCount");
+	}
+	public int getRate() {
+		return sqlsession.selectOne(NAMESPACE_GUAM + "getRate");
+	}	
+	public void deleteReserveData(int resIdx) {
+		System.out.println("in dao" + "resIdx is"+resIdx);
+		sqlsession.delete(NAMESPACE_GUAM + "deleteReserveData", resIdx);
+	}
+	public void deleteOptionData(int opIdx) {
+		System.out.println("in dao" + "opIdx is"+opIdx);
+		sqlsession.delete(NAMESPACE_GUAM + "deleteOptionData", opIdx);
+	}
+	public void updateExchangeRate(int rate) {
+		sqlsession.delete(NAMESPACE_GUAM + "updateExchangeRate", rate);
+		
+	}
+
+
 }

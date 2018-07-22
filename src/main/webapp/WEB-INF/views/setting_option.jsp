@@ -20,7 +20,8 @@
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="js/admin.js"></script>
-  <script src="js/admin_function.js"></script>
+  <script src="js/admin_option.js"></script>
+  
 </head>
 
 <body style = "min-width: 1280px;">
@@ -78,7 +79,7 @@
 
           <div class = "table_container" id="checkReserve">
           
-            <div class = "tr_container" style = "font-weight : bold;">
+            <div id="containerHead" class = "tr_container" style = "font-weight : bold;">
               <div class = "td_container">
                 <div class = "td_cell gray">대분류</div>
                 <div class = "td_cell gray">중분류</div>
@@ -89,29 +90,7 @@
               </div>
               <div class = "del_btn_container gray"><div class = "del_text" style = "color : #777777; text-decoration: none;">삭제</div></div>
             </div>
-            
-            <div class = "tr_container">
-              <div class = "td_container">
-                <div class = "td_cell">대분류 예시 0</div>
-                <div class = "td_cell">중분류 예시 0</div>
-                <div class = "td_cell">소분류 예시 0</div>
-                <div class = "td_cell_small">$101.01</div>
-                <div class = "td_cell_small">$102.02</div>
-                <div class = "td_cell_small">$103.03</div>
-              </div>
-              <div class = "del_btn_container"><div class = "del_text">삭제</div></div>
-            </div>
-            <div class = "tr_container">
-              <div class = "td_container">
-                <div class = "td_cell">대분류 예시 1</div>
-                <div class = "td_cell">중분류 예시 1</div>
-                <div class = "td_cell">소분류 예시 1</div>
-                <div class = "td_cell_small">$101.01</div>
-                <div class = "td_cell_small">$102.02</div>
-                <div class = "td_cell_small">$103.03</div>
-              </div>
-              <div class = "del_btn_container"><div class = "del_text">삭제</div></div>
-            </div>
+            <!-- to be appended area -->
           </div>
         </div>
       </div>
