@@ -25,306 +25,315 @@
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
-  <!-- Add your site or application content here -->
+<!-- Add your site or application content here -->
 
-  <div id="top_head">
+<div id="top_head">
 
-    <div id="top_title">
-      <div class="up_text">괌자유여행 대표브랜드, 놀다괌!</div>
-      <div class="down_text">놀다괌 추천옵션을 만나보세요!</div>
+  <div id="top_title">
+    <div class="up_text">괌자유여행 대표브랜드, 놀다괌!</div>
+    <div class="down_text">놀다괌 추천옵션을 만나보세요!</div>
+  </div>
+
+  <div id="top_choice">
+    <div class="category">
+      <div class = "content">
+        <div class="category_list_on"><p>투어</p></div>
+        <div class="category_arrow_on"></div>
+      </div>
+      <div class = "content">
+        <div class="category_list_off"><p>호텔</p></div>
+        <div class="category_arrow_off"></div>
+      </div>
+      <div class = "content">
+        <div class="category_list_off"><p>렌트카</p></div>
+        <div class="category_arrow_off"></div>
+      </div>
+      <!--
+              <div class = "content">
+                  <div class="category_list_off"><p>여행상품</p></div>
+                  <div class="category_arrow_off"></div>
+              </div>
+              -->
     </div>
-
-    <div id="top_choice">
-      <div class="category">
-        <div class = "content">
-          <div class="category_list_on"><p>투어</p></div>
-          <div class="category_arrow_on"></div>
+    <div class="content">
+      <div class="inner">
+        <div class="title"><p>투어선택</p></div>
+        <div class="content">
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
+          <div>Option</div>
         </div>
-        <div class = "content">
-          <div class="category_list_off"><p>호텔</p></div>
-          <div class="category_arrow_off"></div>
-        </div>
-        <div class = "content">
-          <div class="category_list_off"><p>렌트카</p></div>
-          <div class="category_arrow_off"></div>
-        </div>
-        <!--
-                <div class = "content">
-                    <div class="category_list_off"><p>여행상품</p></div>
-                    <div class="category_arrow_off"></div>
+        <div class="option">
+          <div class ="link">
+            <a href="https://www.naver.com/" target="_blank">
+              <div class ="inner">
+                <div class = "left">
+                  <img src="./img/NaverCafe.png">
                 </div>
-                -->
-      </div>
-      <div class="content">
-        <div class="inner">
-          <div class="title"><p>투어선택</p></div>
-          <div class="content">
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
-            <div>Option</div>
+                <div class = "right">
+                  <p>놀다괌 공식 카페 바로가기</p>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="option">
-            <div class ="link">
-              <a href="https://www.naver.com/" target="_blank">
-                <div class ="inner">
-                  <div class = "left">
-                    <img src="./img/NaverCafe.png">
-                  </div>
-                  <div class = "right">
-                    <p>놀다괌 공식 카페 바로가기</p>
-                  </div>
+          <div class ="link">
+            <a href="https://www.kakaocorp.com/service/KakaoTalk" target="_blank">
+              <div class = "inner">
+                <div class = "left">
+                  <img src="./img/KakaoTalk.png">
                 </div>
-              </a>
-            </div>
-            <div class ="link">
-              <a href="https://www.kakaocorp.com/service/KakaoTalk" target="_blank">
-               <div class = "inner">
-                 <div class = "left">
-                   <img src="./img/KakaoTalk.png">
-                 </div>
-                 <div class = "right">
-                   <p>놀다괌 카톡 상담 바로가기</p>
-                 </div>
-               </div>
-              </a>
-            </div>
+                <div class = "right">
+                  <p>놀다괌 카톡 상담 바로가기</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-
     </div>
 
   </div>
 
-  <div id = "main">
-    <div class ="title">예약자 정보</div>
-    <div class = "form_box">
-      <input type = "text" id = "korName" placeholder = "한글 이름"/>
-      <input type = "text" id = "engName" placeholder = "영문 이름"/>
-      <input type = "text" id = "phone" placeholder = "휴대폰번호"/>
-      <input type = "text" id = "email"placeholder = "이메일주소"/>
+</div>
+
+<div id = "main">
+  <div class ="title">예약자 정보</div>
+  <div class = "form_box">
+    <input type = "text" id = "korName" placeholder = "한글 이름"/>
+    <input type = "text" id = "engName" placeholder = "영문 이름"/>
+    <input type = "text" id = "phone" placeholder = "휴대폰번호"/>
+    <input type = "text" id = "email"placeholder = "이메일주소"/>
+  </div>
+
+  <div class ="title">예약상품 선택</div>
+
+  <div class = "form_box">
+    <div class = "each_toggle_component">
+      <button class="toggle_button" id = "first_divide_option"><span id="bigCategory">대분류 선택</span></button>
+      <div class="toggle_box" >
+        <div class="toggle_content">대분류 옵션1</div>
+        <div class="toggle_content">대분류 옵션2</div>
+        <div class="toggle_content">대분류 옵션3</div>
+        <div class="toggle_content">대분류 옵션4</div>
+        <div class="toggle_content">대분류 옵션5</div>
+        <div class="toggle_content">대분류 옵션6</div>
+        <div class="toggle_content">대분류 옵션7</div>
+        <div class="toggle_content">대분류 옵션8</div>
+        <div class="toggle_content">대분류 옵션9</div>
+      </div>
     </div>
-
-    <div class ="title">예약상품 선택</div>
-
-    <div class = "form_box">
-      <div class = "each_toggle_component">
-        <button class="toggle_button" id = "first_divide_option"><span id="bigCategory">대분류 선택</span></button>
-        <div class="toggle_box" >
-          <div class="toggle_content">대분류 옵션1</div>
-          <div class="toggle_content">대분류 옵션2</div>
-          <div class="toggle_content">대분류 옵션3</div>
-          <div class="toggle_content">대분류 옵션4</div>
-          <div class="toggle_content">대분류 옵션5</div>
-          <div class="toggle_content">대분류 옵션6</div>
-          <div class="toggle_content">대분류 옵션7</div>
-          <div class="toggle_content">대분류 옵션8</div>
-          <div class="toggle_content">대분류 옵션9</div>
+    <div class = "each_toggle_component">
+      <button class="toggle_button" id = "second_divide_option"><span>중분류 선택</span></button>
+      <div class="toggle_box">
+        <div class="toggle_content">중분류 옵션1</div>
+        <div class="toggle_content">중분류 옵션2</div>
+        <div class="toggle_content">중분류 옵션3</div>
+        <div class="toggle_content">중분류 옵션4</div>
+        <div class="toggle_content">중분류 옵션5</div>
+        <div class="toggle_content">중분류 옵션6</div>
+        <div class="toggle_content">중분류 옵션7</div>
+        <div class="toggle_content">중분류 옵션8</div>
+        <div class="toggle_content">중분류 옵션9</div>
+      </div>
+    </div>
+    <div class = "each_toggle_component">
+      <button class="toggle_button" id = "third_divide_option"><span>소분류 선택</span></button>
+      <div class="toggle_box">
+        <div class="toggle_content">소분류 옵션1</div>
+        <div class="toggle_content">소분류 옵션2</div>
+        <div class="toggle_content">소분류 옵션3</div>
+        <div class="toggle_content">소분류 옵션4</div>
+        <div class="toggle_content">소분류 옵션5</div>
+        <div class="toggle_content">소분류 옵션6</div>
+        <div class="toggle_content">소분류 옵션7</div>
+        <div class="toggle_content">소분류 옵션8</div>
+        <div class="toggle_content">소분류 옵션9</div>
+      </div>
+    </div>
+    <input type="text" id="datepicker1" class = "picker_input" value="1992-06-29" style = ""/>
+    <input type="text" id="datepicker2" class = "picker_input" value="1992-06-29" style = ""/>
+    <!--<p>Date: <input type="text" id="datepicker"></p>-->
+    <div class = "each_toggle_component">
+      <button class="toggle_button" id = "fourth_divide_option"><span>호텔 픽업시간</span></button>
+      <div class="toggle_box">
+        <div class="toggle_content">괌플라자-08:00</div>
+        <div class="toggle_content">베이뷰-08:05</div>
+        <div class="toggle_content">두짓타니(1층G Gloor에서 픽업)-08:05</div>
+        <div class="toggle_content">롯데-08:05</div>
+        <div class="toggle_content">니코-08:05</div>
+        <div class="toggle_content">오션뷰-08:05</div>
+        <div class="toggle_content">아웃트리거(두짓타니 1층G Floor에서 픽업)-08:15</div>
+        <div class="toggle_content">그랜드플라자-08:20</div>
+        <div class="toggle_content">하얏트-08:20</div>
+        <div class="toggle_content">피에스타-08:25</div>
+        <div class="toggle_content">가든빌라-08:25</div>
+        <div class="toggle_content">베로나-08:25</div>
+        <div class="toggle_content">홀리데이-08:25</div>
+        <div class="toggle_content">퍼시픽스타-08:30</div>
+        <div class="toggle_content">P.I.C-08:30</div>
+        <div class="toggle_content">리프-08:30</div>
+        <div class="toggle_content">힐튼-08:35</div>
+        <div class="toggle_content">쉐라톤-08:40</div>
+        <div class="toggle_content">온워드-08:45</div>
+      </div>
+    </div>
+    <div class = "each_toggle_component">
+      <button class="toggle_button" id = "reserveTime"><span>투어시간</span></button>
+      <div class="toggle_box">
+        <div class="toggle_content">오전</div>
+        <div class="toggle_content">오후</div>
+        <div class="toggle_content">종일</div>
+      </div>
+    </div>
+    <div class = "input_special">
+      <div class = "top">
+        <div class = "left"><p>투어 인원</p></div>
+        <div class = "icon">
+          <p>▼</p>
+        </div>
+        <div class = "right">
+          <div>성인&nbsp</div><div id = "adult" class = "a">0</div><div>명</div><div> / </div>
+          <div>소아&nbsp</div><div id = "kid" class = "a">0</div><div>명</div><div> / </div>
+          <div>유아&nbsp</div><div id = "baby" class = "a">0</div><div>명</div>
         </div>
       </div>
-      <div class = "each_toggle_component">
-        <button class="toggle_button" id = "second_divide_option"><span>중분류 선택</span></button>
-        <div class="toggle_box">
-          <div class="toggle_content">중분류 옵션1</div>
-          <div class="toggle_content">중분류 옵션2</div>
-          <div class="toggle_content">중분류 옵션3</div>
-          <div class="toggle_content">중분류 옵션4</div>
-          <div class="toggle_content">중분류 옵션5</div>
-          <div class="toggle_content">중분류 옵션6</div>
-          <div class="toggle_content">중분류 옵션7</div>
-          <div class="toggle_content">중분류 옵션8</div>
-          <div class="toggle_content">중분류 옵션9</div>
-        </div>
-      </div>
-      <div class = "each_toggle_component">
-        <button class="toggle_button" id = "third_divide_option"><span>소분류 선택</span></button>
-        <div class="toggle_box">
-          <div class="toggle_content">소분류 옵션1</div>
-          <div class="toggle_content">소분류 옵션2</div>
-          <div class="toggle_content">소분류 옵션3</div>
-          <div class="toggle_content">소분류 옵션4</div>
-          <div class="toggle_content">소분류 옵션5</div>
-          <div class="toggle_content">소분류 옵션6</div>
-          <div class="toggle_content">소분류 옵션7</div>
-          <div class="toggle_content">소분류 옵션8</div>
-          <div class="toggle_content">소분류 옵션9</div>
-        </div>
-      </div>
-      <div class = "each_toggle_component">
-        <button class="toggle_button" id = "fourth_divide_option"><span>기타분류 선택</span></button>
-        <div class="toggle_box">
-          <div class="toggle_content">기타분류 옵션1</div>
-          <div class="toggle_content">기타분류 옵션2</div>
-          <div class="toggle_content">기타분류 옵션3</div>
-          <div class="toggle_content">기타분류 옵션4</div>
-          <div class="toggle_content">기타분류 옵션5</div>
-          <div class="toggle_content">기타분류 옵션6</div>
-          <div class="toggle_content">기타분류 옵션7</div>
-          <div class="toggle_content">기타분류 옵션8</div>
-          <div class="toggle_content">기타분류 옵션9</div>
-        </div>
-      </div>
-
-      <input type="text" id="datepicker1" class = "picker_input" value="1992-06-29" style = ""/>
-      <input type="text" id="datepicker2" class = "picker_input" value="1992-06-29" style = ""/>
-      <!--<p>Date: <input type="text" id="datepicker"></p>-->
-      <div class = "each_toggle_component">
-        <button class="toggle_button" id = "reserveTime"><span>투어시간</span></button>
-        <div class="toggle_box">
-          <div class="toggle_content">오전</div>
-          <div class="toggle_content">오후</div>
-          <div class="toggle_content">종일</div>
-        </div>
-      </div>
-      <div class = "input_special">
-        <div class = "top">
-          <div class = "left"><p>투어 인원</p></div>
-          <div class = "icon">
-            <p>▼</p>
+      <div class = "middle_container">
+        <div class = "middle">
+          <div class = "left">
+            <div>성인&nbsp</div><div class = "b">0</div><div>명</div>
           </div>
           <div class = "right">
-            <div>성인&nbsp</div><div id = "adult" class = "a">0</div><div>명</div><div> / </div>
-            <div>소아&nbsp</div><div id = "kid" class = "a">0</div><div>명</div><div> / </div>
-            <div>유아&nbsp</div><div id = "baby" class = "a">0</div><div>명</div>
+            <div class = "count_box">
+              <div class = "bt_down"><p>-</p></div>
+              <input class = "count" name ="num" value="0" placeholder ="인원"/>
+              <div class = "bt_up"><p>+</p></div>
+            </div>
           </div>
         </div>
-        <div class = "middle_container">
-          <div class = "middle">
-            <div class = "left">
-              <div>성인&nbsp</div><div class = "b">0</div><div>명</div>
-            </div>
-            <div class = "right">
-              <div class = "count_box">
-                <div class = "bt_down"><p>-</p></div>
-                <input class = "count" name ="num" value="0" placeholder ="인원"/>
-                <div class = "bt_up"><p>+</p></div>
-              </div>
+        <div class = "middle">
+          <div class = "left">
+            <div>소아&nbsp</div><div class = "b">0</div><div>명</div>
+          </div>
+          <div class = "right">
+            <div class = "count_box">
+              <div class = "bt_down"><p>-</p></div>
+              <input class = "count" name ="num" value="0" placeholder ="인원"/>
+              <div class = "bt_up"><p>+</p></div>
             </div>
           </div>
-          <div class = "middle">
-            <div class = "left">
-              <div>소아&nbsp</div><div class = "b">0</div><div>명</div>
-            </div>
-            <div class = "right">
-              <div class = "count_box">
-                <div class = "bt_down"><p>-</p></div>
-                <input class = "count" name ="num" value="0" placeholder ="인원"/>
-                <div class = "bt_up"><p>+</p></div>
-              </div>
-            </div>
+        </div>
+        <div class = "middle">
+          <div class = "left">
+            <div>유아&nbsp</div><div class = "b">0</div><div>명</div>
           </div>
-          <div class = "middle">
-            <div class = "left">
-              <div>유아&nbsp</div><div class = "b">0</div><div>명</div>
-            </div>
-            <div class = "right">
-              <div class = "count_box">
-                <div class = "bt_down"><p>-</p></div>
-                <input class = "count" name ="num" value="0" placeholder ="인원"/>
-                <div class = "bt_up"><p>+</p></div>
-              </div>
+          <div class = "right">
+            <div class = "count_box">
+              <div class = "bt_down"><p>-</p></div>
+              <input class = "count" name ="num" value="0" placeholder ="인원"/>
+              <div class = "bt_up"><p>+</p></div>
             </div>
           </div>
         </div>
       </div>
-      <div class = "billing">
-        <div class = "normal_text">
-          <div class = "left"><p>예약금</p></div>
-          <div class = "right" id = "local_payment"><p>$123.45</p></div>
-        </div>
+    </div>
+    <div class = "billing">
+      <div class = "normal_text">
+        <div class = "left"><p>예약금</p></div>
+        <div class = "right" id = "local_payment"><p>$123.45</p></div>
+      </div>
 
-        <div class = "normal_text">
-          <div class = "left"><p>현지지불액</p></div>
-          <div class = "right" id = "abroad_payment"><p>$500.12</p></div>
-        </div>
+      <div class = "normal_text">
+        <div class = "left"><p>현지지불액</p></div>
+        <div class = "right" id = "abroad_payment"><p>$500.12</p></div>
       </div>
     </div>
-    <div class = "button_container">
-      <div id = "add_btn" class = "button_design"><p>상품 추가하기</p></div>
-    </div>
-
+  </div>
+  <div class = "button_container">
+    <div id = "add_btn" class = "button_design"><p>상품 추가하기</p></div>
   </div>
 
-  <div id = "list">
-    <div class = "box">
-      <table id="bill"><!-- frame="void"-->
-        <tr>
-          <th class = "col_1">대분류 / 중분류</th>
-          <th class = "col_2">소분류 / 기타분류</th>
-          <th class = "col_3">투어날짜 / 투어시간</th>
-          <th class = "col_4">인원</th>
-          <th class = "col_5">예약금</th>
-          <th class = "col_6">현지지불액</th>
-        </tr>
-<!--  <tr>
-          <td class = "col_1">투어</td>
-          <td class = "col_2">오션벤처호 돌핀크루저</td>
-          <td class = "col_3">2018-07-06</td>
-          <td class = "col_4">성인 : 2</td>
-          <td class = "col_5">$0<br>(0원)</td>
-          <td class = "col_6">$0</td>
-        </tr>
-        <tr>
-          <td class = "col_1">투어</td>
-          <td class = "col_2">오션벤처호 돌핀크루저</td>
-          <td class = "col_3">2018-07-06</td>
-          <td class = "col_4">성인 : 2</td>
-          <td class = "col_5">$0.00<br>(0원)</td>
-          <td class = "col_6">$0.00</td>
-        </tr>-->
-      </table>
-    </div>
-    <div class = "total">
+</div>
 
-      <div class ="left">
-        <p>총 결제금액</p>
-      </div>
-
-      <div class ="right">
-        <div class = "orange">$0.00</div>
-        <div class = "dark">$0.00(한국 결제 예약금 : 0원) + $0.00(현지 지불 금액)</div>
-      </div>
-    </div>
-
+<div id = "list">
+  <div class = "box">
+    <table id="bill"><!-- frame="void"-->
+      <tr>
+        <th class = "col_1">대분류 / 중분류</th>
+        <th class = "col_2">소분류 / 기타분류</th>
+        <th class = "col_3">투어날짜 / 투어시간</th>
+        <th class = "col_4">인원</th>
+        <th class = "col_5">예약금</th>
+        <th class = "col_6">현지지불액</th>
+      </tr>
+      <!--  <tr>
+                <td class = "col_1">투어</td>
+                <td class = "col_2">오션벤처호 돌핀크루저</td>
+                <td class = "col_3">2018-07-06</td>
+                <td class = "col_4">성인 : 2</td>
+                <td class = "col_5">$0<br>(0원)</td>
+                <td class = "col_6">$0</td>
+              </tr>
+              <tr>
+                <td class = "col_1">투어</td>
+                <td class = "col_2">오션벤처호 돌핀크루저</td>
+                <td class = "col_3">2018-07-06</td>
+                <td class = "col_4">성인 : 2</td>
+                <td class = "col_5">$0.00<br>(0원)</td>
+                <td class = "col_6">$0.00</td>
+              </tr>-->
+    </table>
   </div>
-  <div id = "important">
-    <div class = "outer_container">
-      <div class ="container">
-        <div class = "checkbox_title">
-          <input type = "checkbox" id = "check_one">
-          <p>아래 공통특약사항을 숙지하였습니다.</p>
-        </div>
-        <div class = "content">
-          <h3>공통특약사항</h3>
-          <pre>
+  <div class = "total">
+
+    <div class ="left">
+      <p>총 결제금액</p>
+    </div>
+
+    <div class ="right">
+      <div class = "orange">$0.00</div>
+      <div class = "dark">$0.00(한국 결제 예약금 : 0원) + $0.00(현지 지불 금액)</div>
+    </div>
+  </div>
+
+</div>
+<div id = "important">
+  <div class = "outer_container">
+    <div class ="container">
+      <div class = "checkbox_title">
+        <input type = "checkbox" id = "check_one">
+        <p>아래 공통특약사항을 숙지하였습니다.</p>
+      </div>
+      <div class = "content">
+        <h3>공통특약사항</h3>
+        <pre>
 1. 괌 투어 주관사는 여행자 안전의 문제가 있다고 판단할 경우, 투어 당일 취소할 수 있으며 미리 결제한 금액은 전액 환불 됩니다.
 2. 국외 여행 표준약관 제15조 제2항 2호, 제13조 제1항 제1호 및 제2호의 면책 사유에 해당하지 않는 경우 아래와 같은 취소 위약금이 발생합니다
 3. 이용 시간(각주1) 96시간 이내 투어 일정 변경 및 취소 불가하며 변경 후 취소 또는 NO-SHOW의 경우 투어 비용(각주2)을 취소 위약금 배상해야 합니다.
@@ -333,14 +342,14 @@
 (각주 1) 이용 시간은 픽업 시간 기준 입니다
 (각주 2) 투어 비용은 전액 선결제한 금액 또는 예약금과 현지 지불액을 합한 정상가 기준 금액
           </pre>
-        </div>
-        <div class = "checkbox_title">
-          <input type = "checkbox" id = "check_two">
-          <p>아래 필독사항을 숙지하였습니다.</p>
-        </div>
-        <div class = "content">
-          <h3>(특약)여행주의사항 및 환불 규정</h3>
-          <pre>
+      </div>
+      <div class = "checkbox_title">
+        <input type = "checkbox" id = "check_two">
+        <p>아래 필독사항을 숙지하였습니다.</p>
+      </div>
+      <div class = "content">
+        <h3>(특약)여행주의사항 및 환불 규정</h3>
+        <pre>
 ※ 이 약관은 (주)놀다투어_놀다괌(이하 당사 라고 한다) 과 여행자가 체결한 이행 및 준수 사항을 정함을 목적으로 합니다.
 ※ 특약에 별도 규정이 없는 사항은 국외 표준 약관을 따릅니다.
 ※ 당사는 괌 현지 옵션 주관사 및 예약 대행사로써 해외 투어 주관사의 요청에 따라 취소 수수료 기준을 준수합니다.(국외 표준 약관 보다 우선 적용)
@@ -652,19 +661,19 @@
 본인 스스로 판단한 선택관광인 만큼 안전에 각별한 신경을 써 주시기 바랍니다.
 
 아래 링크에서 자세한 약관 및 서비스 정보을 확인 할 수 있습니다.</pre>
-          <a href ="http://cafe.naver.com/kajas/3175" target ="_blank"><p>● (특약)여행주의사항 및 환불 규정</p></a>
-          <a href ="http://cafe.naver.com/kajas/10472" target ="_blank"><p>● 괌 병원</p></a>
-          <a href ="http://cafe.naver.com/kajas/10131" target ="_blank"><p>● 괌 약국</p></a>
-          <a href ="https://cafe.naver.com/kajas/2895" target ="_blank"><p>● 투어 총 정리</p></a>
-          <a href ="https://cafe.naver.com/kajas/2879" target ="_blank"><p>● 렌트카 총 정리</p></a>
-        </div>
-        <div class = "checkbox_title">
-          <input type = "checkbox" id = "check_three">
-          <p>아래 개인정보활용에 대한 규정을 읽고 이에 동의합니다.</p>
-        </div>
-        <div class = "content">
-          <h3>개인정보 동의</h3>
-          <pre>
+        <a href ="http://cafe.naver.com/kajas/3175" target ="_blank"><p>● (특약)여행주의사항 및 환불 규정</p></a>
+        <a href ="http://cafe.naver.com/kajas/10472" target ="_blank"><p>● 괌 병원</p></a>
+        <a href ="http://cafe.naver.com/kajas/10131" target ="_blank"><p>● 괌 약국</p></a>
+        <a href ="https://cafe.naver.com/kajas/2895" target ="_blank"><p>● 투어 총 정리</p></a>
+        <a href ="https://cafe.naver.com/kajas/2879" target ="_blank"><p>● 렌트카 총 정리</p></a>
+      </div>
+      <div class = "checkbox_title">
+        <input type = "checkbox" id = "check_three">
+        <p>아래 개인정보활용에 대한 규정을 읽고 이에 동의합니다.</p>
+      </div>
+      <div class = "content">
+        <h3>개인정보 동의</h3>
+        <pre>
 놀다투어는 고객님의 개인정보를 중요시하며,
 
 "정보통신망 이용촉진 및 정보보호"에 관한 법률을 준수하고 있습니다.
@@ -737,55 +746,54 @@
 제8조(여행업자의 책임)
 
 여행업자는 여행 출발시부터 도착시까지 여행업자 본인 또는 그 고용인, 현지여행업자 또는 그 고용인 등(이하 '사용인'이라 함)이 제2조제1항에서 규정한 여행업자 임무와 관련하여 여행자에게 고의 또는 과실로 손해를 가한 경우 책임을 집니다.</pre>
+      </div>
+    </div>
+    <div class = "button_area">
+      <div class = "button_container">
+        <div id = "infomation_btn" class = "button_design" style = "float : right; background-color : #999999;">
+          <p>견적 확인</p>
+        </div>
+      </div>
+      <div class = "margin_box"></div>
+      <div class = "button_container">
+        <div id = "complete_btn" class = "button_design" style = "float : left;">
+          <p>신청 하기</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id = "escape_box"></div>
+<div id = "mask"></div>
+<div id = "pop_background">
+  <div class = "pop_box">
+    <div class = "pop_content">
+      <div class = "title">
+        <p>견적 확인</p>
+      </div>
+      <div class ="content_box">
+        <div class ="content">
+          <p>
+            ddddddddddddddddd
+          </p>
         </div>
       </div>
       <div class = "button_area">
         <div class = "button_container">
-          <div id = "infomation_btn" class = "button_design" style = "float : right; background-color : #999999;">
-            <p>견적 확인</p>
-          </div>
-        </div>
-        <div class = "margin_box"></div>
-        <div class = "button_container">
-          <div id = "complete_btn" class = "button_design" style = "float : left;">
-            <p>신청 하기</p>
+          <div id = "close_btn" class = "button_design">
+            <p>확인 완료</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id = "escape_box"></div>
-  <div id = "mask"></div>
-  <div id = "pop_background">
-    <div class = "pop_box">
-      <div class = "pop_content">
-        <div class = "title">
-          <p>견적 확인</p>
-        </div>
-        <div class ="content_box">
-          <div class ="content">
-            <p>
-              ddddddddddddddddd
-            </p>
-          </div>
-        </div>
-        <div class = "button_area">
-          <div class = "button_container">
-            <div id = "close_btn" class = "button_design">
-              <p>확인 완료</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
 
-  <div id = "footer"></div>
+<div id = "footer"></div>
 
-  <script src="js/main.js"></script>
-  <script src="js/add.js"></script>
-  <script src="js/reserve.js"></script>
+<script src="js/main.js"></script>
+<script src="js/add.js"></script>
+<script src="js/reserve.js"></script>
 
 </body>
-
 </html>

@@ -16,4 +16,16 @@ jQuery(function($) {
     });
   });
 
+  // 메인화면 예약내용 테이블 클릭 시 상세보기
+  $(function () {
+    $(".tr_container").click(function () {
+      if($(this).children(".hidden_toggle_box").css("display") == "none"){
+        $(this).children(".hidden_toggle_box").css("display", "block");
+      }else{
+        $(this).children(".hidden_toggle_box").css("display", "none");
+      }
+    });
+  });
+
+
 });
