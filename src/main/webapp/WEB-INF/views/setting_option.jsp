@@ -21,7 +21,7 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="js/admin.js"></script>
   <script src="js/admin_option.js"></script>
-  
+
 </head>
 
 <body style = "min-width: 1280px;">
@@ -37,7 +37,7 @@
       <div id = "menu_box">
         <div class = "menu_box_container">
      	  <a href = "admin" target = "_top"><div class = "each_menu">예약자 정보</div></a>
-          <a href = "setOptions" target = "_top"><div class = "each_menu">옵션 설정</div></a>
+          <a href = "setOptions" target = "_top"><div class = "each_menu">투어 등록</div></a>
           <a href = "setExchangeRate" target = "_top"><div class = "each_menu">환율 설정</div></a>
         </div>
       </div>
@@ -48,7 +48,7 @@
       <div class = "text_box">
         <div class = "each_text"><a href ="admin" target ="_top"><p class = "title_font">홈</p></a></div>
         <div class = "each_text"><p class = "title_font">&nbsp;>&nbsp;</p></div>
-        <div class = "each_text"><a href ="setOptions" target ="_top"><p class = "title_font">옵션 설정</p></a></div>
+        <div class = "each_text"><a href ="setOptions" target ="_top"><p class = "title_font">투어 등록</p></a></div>
       </div>
     </div>
     <div class = "list_container">
@@ -78,7 +78,7 @@
         <div class = "category_list_area">
 
           <div class = "table_container" id="checkReserve">
-          
+
             <div id="containerHead" class = "tr_container" style = "font-weight : bold;">
               <div class = "td_container">
                 <div class = "td_cell gray">대분류</div>
@@ -91,6 +91,32 @@
               <div class = "del_btn_container gray"><div class = "del_text" style = "color : #777777; text-decoration: none;">삭제</div></div>
             </div>
             <!-- to be appended area -->
+
+            <!-- 목업데이터 -->
+            <div class = "tr_container">
+              <div class = "td_container">
+                <div class = "td_cell">대분류 예시 0</div>
+                <div class = "td_cell">중분류 예시 0</div>
+                <div class = "td_cell">소분류 예시 0</div>
+                <div class = "td_cell_small">$101.01</div>
+                <div class = "td_cell_small">$102.02</div>
+                <div class = "td_cell_small">$103.03</div>
+              </div>
+              <div class = "del_btn_container"><div class = "del_text">삭제</div></div>
+            </div>
+            <div class = "tr_container">
+              <div class = "td_container">
+                <div class = "td_cell">대분류 예시 1</div>
+                <div class = "td_cell">중분류 예시 1</div>
+                <div class = "td_cell">소분류 예시 1</div>
+                <div class = "td_cell_small">$101.01</div>
+                <div class = "td_cell_small">$102.02</div>
+                <div class = "td_cell_small">$103.03</div>
+              </div>
+              <div class = "del_btn_container"><div class = "del_text">삭제</div></div>
+            </div>
+
+            <!-- 목업데이터 -->
           </div>
         </div>
       </div>
