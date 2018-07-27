@@ -58,7 +58,7 @@
       </div>
     </div>
     <div id = "major_container">
-      <div id = "major_box_container">
+      <!-- <div id = "major_box_container">
         <div class = "big_toggle_component">
           <div class = "left_area">
             <div class = "up_area">
@@ -66,7 +66,7 @@
             </div>
             <div class = "down_area">
               <button class="toggle_button"><span>전체</span></button>
-
+      
             </div>
           </div>
           <div class = "right_area">
@@ -91,7 +91,7 @@
             </div>
             <div class = "down_area">
               <button class="toggle_button"><span>구매일</span></button>
-
+      
             </div>
           </div>
           <div class = "right_area">
@@ -132,7 +132,7 @@
             </div>
             <div class = "down_area">
               <button class="toggle_button"><span>전체</span></button>
-
+      
             </div>
           </div>
           <div class = "right_area">
@@ -186,8 +186,8 @@
             <input type = "text" placeholder = "품명을 입력하세요"/>
           </div>
         </div>
-
-      </div> <!-- major_box_container -->
+      
+      </div> --> <!-- major_box_container -->
       <div class = center_text_box><p>예약리스트</p></div>
       <div id = "major_list_container">
 
