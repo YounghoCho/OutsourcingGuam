@@ -292,21 +292,21 @@
         <th class = "col_6">현지지불액</th>
       </tr>
       <tr>
-          <td class = "col_1">투어</td>
-          <td class = "col_2">오션벤처호 돌핀크루저</td>
-          <td class = "col_3">2018-07-06</td>
-          <td class = "col_4">성인 : 2</td>
-          <td class = "col_5">$0<br>(0원)</td>
-          <td class = "col_6">$0</td>
-        </tr>
-        <tr>
-          <td class = "col_1">투어</td>
-          <td class = "col_2">오션벤처호 돌핀크루저</td>
-          <td class = "col_3">2018-07-06</td>
-          <td class = "col_4">성인 : 2</td>
-          <td class = "col_5">$0.00<br>(0원)</td>
-          <td class = "col_6">$0.00</td>
-        </tr>
+        <td class = "col_1">투어</td>
+        <td class = "col_2">오션벤처호 돌핀크루저</td>
+        <td class = "col_3">2018-07-06</td>
+        <td class = "col_4">성인 : 2</td>
+        <td class = "col_5">$0<br>(0원)</td>
+        <td class = "col_6">$0</td>
+      </tr>
+      <tr>
+        <td class = "col_1">투어</td>
+        <td class = "col_2">오션벤처호 돌핀크루저</td>
+        <td class = "col_3">2018-07-06</td>
+        <td class = "col_4">성인 : 2</td>
+        <td class = "col_5">$0.00<br>(0원)</td>
+        <td class = "col_6">$0.00</td>
+      </tr>
     </table>
   </div>
   <div class = "total">
@@ -748,8 +748,8 @@
     </div>
     <div class = "button_area">
       <div class = "button_container">
-        <div id = "complete_btn" class = "button_design_orange">
-          <p>신청 하기</p>
+        <div id = "infomation_btn" class = "button_design_gray">
+          <p>견적 확인</p>
         </div>
       </div>
     </div>
