@@ -182,25 +182,25 @@
     <div class = "each_toggle_component">
       <button class="toggle_button" id = "fourth_divide_option"><span>호텔 픽업시간</span></button>
       <div class="toggle_box">
-        <div class="toggle_content">괌플라자-08:00</div>
-        <div class="toggle_content">베이뷰-08:05</div>
-        <div class="toggle_content">두짓타니(1층G Gloor에서 픽업)-08:05</div>
-        <div class="toggle_content">롯데-08:05</div>
-        <div class="toggle_content">니코-08:05</div>
-        <div class="toggle_content">오션뷰-08:05</div>
-        <div class="toggle_content">아웃트리거(두짓타니 1층G Floor에서 픽업)-08:15</div>
-        <div class="toggle_content">그랜드플라자-08:20</div>
-        <div class="toggle_content">하얏트-08:20</div>
-        <div class="toggle_content">피에스타-08:25</div>
-        <div class="toggle_content">가든빌라-08:25</div>
-        <div class="toggle_content">베로나-08:25</div>
-        <div class="toggle_content">홀리데이-08:25</div>
-        <div class="toggle_content">퍼시픽스타-08:30</div>
-        <div class="toggle_content">P.I.C-08:30</div>
-        <div class="toggle_content">리프-08:30</div>
-        <div class="toggle_content">힐튼-08:35</div>
-        <div class="toggle_content">쉐라톤-08:40</div>
-        <div class="toggle_content">온워드-08:45</div>
+        <div class="toggle_content">괌플라자</div>
+        <div class="toggle_content">베이뷰</div>
+        <div class="toggle_content">두짓타니(1층G Gloor에서 픽업)</div>
+        <div class="toggle_content">롯데</div>
+        <div class="toggle_content">니코</div>
+        <div class="toggle_content">오션뷰</div>
+        <div class="toggle_content">아웃트리거(두짓타니 1층G Floor에서 픽업)</div>
+        <div class="toggle_content">그랜드플라자</div>
+        <div class="toggle_content">하얏트</div>
+        <div class="toggle_content">피에스타</div>
+        <div class="toggle_content">가든빌라</div>
+        <div class="toggle_content">베로나</div>
+        <div class="toggle_content">홀리데이</div>
+        <div class="toggle_content">퍼시픽스타</div>
+        <div class="toggle_content">P.I.C</div>
+        <div class="toggle_content">리프</div>
+        <div class="toggle_content">힐튼</div>
+        <div class="toggle_content">쉐라톤</div>
+        <div class="toggle_content">온워드</div>
       </div>
     </div>
     <div class = "each_toggle_component">
@@ -265,12 +265,12 @@
     <div class = "billing">
       <div class = "normal_text">
         <div class = "left"><p>예약금</p></div>
-        <div class = "right" id = "local_payment"><p>$123.45</p></div>
+        <div class = "right" id = "local_payment"><p>$0.00</p></div>
       </div>
 
       <div class = "normal_text">
         <div class = "left"><p>현지지불액</p></div>
-        <div class = "right" id = "abroad_payment"><p>$500.12</p></div>
+        <div class = "right" id = "abroad_payment"><p>$0.00</p></div>
       </div>
     </div>
   </div>
@@ -761,7 +761,7 @@
   <div class = "pop_box">
     <div class = "pop_content">
       <div class = "title">
-        <p>견적 확인</p>
+        <p></p>
       </div>
       <div class ="content_box">
         <div class ="content">
@@ -772,8 +772,8 @@
       </div>
       <div class = "button_area">
         <div class = "button_container">
-          <div id = "close_btn" class = "button_design">
-            <p>확인 완료</p>
+          <div id = "return_main" class = "button_design">
+            <p>초기화면</p>
           </div>
         </div>
       </div>
