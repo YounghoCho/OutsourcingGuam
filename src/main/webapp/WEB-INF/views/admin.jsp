@@ -37,9 +37,12 @@
       <div class = "head_menu_icon_area"><img src="img/menu_icon.png"/></div>
       <div id = "menu_box">
         <div class = "menu_box_container">
-     	  <a href = "admin" target = "_top"><div class = "each_menu">예약자 정보</div></a>
+		  <a href = "keepReservation" target = "_top"><div class = "each_menu">예약 관리</div></a>
           <a href = "setOptions" target = "_top"><div class = "each_menu">투어 등록</div></a>
           <a href = "setExchangeRate" target = "_top"><div class = "each_menu">환율 설정</div></a>
+<!--           <a href = "keep_reservation.html" target = "_top"><div class = "each_menu">예약 관리</div></a>
+          <a href = "setting_option.html" target = "_top"><div class = "each_menu">투어 등록</div></a>
+          <a href = "setting_exchange.html" target = "_top"><div class = "each_menu">환율 설정</div></a> -->
         </div>
       </div>
     </div>

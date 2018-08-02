@@ -758,18 +758,13 @@ tr, td {
 }
 
 #important > .outer_container > .button_area > .button_container {
-  float : left;
-  width : 49%;
+  width : 100%;
+  margin : 15px 0;
   overflow : auto;
+  text-align : center;
 }
 
-#important > .outer_container > .button_area > .margin_box {
-  float : left;
-  height : 50px;
-  width : 2%;
-}
-
-#important > .outer_container > .button_area > .button_container > .button_design {
+#important > .outer_container > .button_area > .button_container > .button_design_orange {
   display : table;
   width : 160px;
   height : 50px;
@@ -781,7 +776,49 @@ tr, td {
   cursor : pointer;
 }
 
-#important > .outer_container > .button_area > .button_container > .button_design > p {
+#important > .outer_container > .button_area > .button_container > .button_design_orange > p {
+  display : table-cell;
+  vertical-align : middle;
+}
+
+#important > .outer_container > .button_area > .button_container > .button_design_gray {
+  display : table;
+  width : 160px;
+  height : 50px;
+  border-radius: 10px;
+  font-size : 20px;
+  margin : auto;
+  background-color : #999999;
+  color : #ffffff;
+  cursor : pointer;
+}
+
+#important > .outer_container > .button_area > .button_container > .button_design_gray > p {
+  display : table-cell;
+  vertical-align : middle;
+}
+
+
+#main > .button_container {
+  width : 100%;
+  margin : 15px 0;
+  overflow : auto;
+  text-align : center;
+}
+
+#main > .button_container > .button_design {
+  display : table;
+  width : 160px;
+  height : 50px;
+  border-radius: 10px;
+  font-size : 20px;
+  margin : auto;
+  background-color : #ff6600;
+  color : #ffffff;
+  cursor : pointer;
+}
+
+#main > .button_container > .button_design > p {
   display : table-cell;
   vertical-align : middle;
 }
